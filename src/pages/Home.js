@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar';
 import HeadingOne from '../components/HeadingOne';
 import WindowPicture from '../components/WindowPicture';
 import BaseButton from '../components/BaseButton';
+import LearnMorePicture from '../components/LearnMorePicture';
 
 // Import media
 import LogoBlueBackground from '../assets/logo_blue_background.png';
@@ -16,6 +17,12 @@ import WindowOne from '../assets/frida_1.jpeg';
 import WindowTwo from '../assets/chente.png';
 import WindowThree from '../assets/cantinflas.jpg';
 import WindowFour from '../assets/catrina_1.png';
+
+import LearnMorePictureOne from '../assets/test_tacos_2.jpg';
+import LearnMorePictureTwo from '../assets/tequila_shot.jpg';
+import LearnMorePictureThree from '../assets/test_panda_restaurant.jpg';
+import LearnMorePictureFour from '../assets/fajitas_pose.jpg';
+
 
 function Home() {
     // Use states for the navigation bar background color
@@ -62,7 +69,7 @@ function Home() {
                 </div>
             </div>
 
-            {/* ########## CTA SECTION ########## */}
+            {/* ########## FIRST CTA SECTION ########## */}
             <div className={styles.firstCTA}>
                 {/* Logo */}
                 <div className={styles.firstCTALogoContainer}>
@@ -90,6 +97,17 @@ function Home() {
                     </svg>
                 </div>
             </div>
+
+            {/* ########## LEARN MORE PICTURES ########## */}
+            <div className={styles.learnMorePicturesSection}>
+                <div className={styles.learnMorePicturesContainer}>
+                    <LearnMorePicture additionalClassNames={styles.learnMorePictureOne} title={'First time'} src={LearnMorePictureOne}>TACOS</LearnMorePicture>
+                    <LearnMorePicture additionalClassNames={styles.learnMorePictureTwo} title={'First time'} src={LearnMorePictureTwo}>TEQUILA</LearnMorePicture>
+                    <LearnMorePicture additionalClassNames={styles.learnMorePictureThree} title={'First time'} src={LearnMorePictureThree}>GREAT TIME</LearnMorePicture>
+                    <LearnMorePicture additionalClassNames={styles.learnMorePictureFour} title={'First time'} src={LearnMorePictureFour}>AND MORE</LearnMorePicture>
+                </div>
+            </div>
+
         </div>
      );
 }

@@ -1,4 +1,6 @@
+/* ############################ */
 /* ########## BANNER ########## */
+/* ############################ */
 .upperBanner {
     width: 100vw;
     height: 100vh;
@@ -50,7 +52,9 @@
     
 }
 
+/* ############################### */
 /* ########## FIRST CTA ########## */
+/* ############################### */
 .firstCTA {
     background-color: #56f7ff;
     padding: 0rem 0 6rem 0;
@@ -110,5 +114,43 @@
 
 .custom_shape_divider_bottom_1722894654 .shape_fill {
     fill: #A56F80;
+}
+
+/* ################################################ */
+/* ########## LEARN MORE PICTURE SECTION ########## */
+/* ################################################ */
+.learnMorePicturesSection {
+    background-color: #A56F80;
+    padding: 3rem 0;
+}
+
+.learnMorePicturesContainer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: fit-content;
+    gap: 1rem;
+}
+
+.learnMorePictureOne {
+    grid-column: 1 / 2;
+    border-radius: 50% 0 0 50%;
+}
+
+.learnMorePictureTwo {
+    grid-column: 2 / 3;
+    border-radius: 0 50% 0 0;
+}
+
+.learnMorePictureThree {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border-radius: 0 0 0 50%;
+}
+
+.learnMorePictureFour {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    border-radius: 0 50% 50% 0;
 }
 
