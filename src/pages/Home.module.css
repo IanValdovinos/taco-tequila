@@ -53,9 +53,10 @@
 /* ########## FIRST CTA ########## */
 .firstCTA {
     background-color: #56f7ff;
-    padding: 0 0 3rem 0;
+    padding: 0rem 0 6rem 0;
     width: 100%;
     height: fit-content;
+    position: relative;
 }
 
 .firstCTALogoContainer {
@@ -84,5 +85,30 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+}
+
+.firstCTAButton {
+    margin: 2rem;
+}
+
+.custom_shape_divider_bottom_1722894654 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom_shape_divider_bottom_1722894654 svg {
+    position: relative;
+    display: block;
+    width: calc(132% + 1.3px);
+    height: 173px;
+}
+
+.custom_shape_divider_bottom_1722894654 .shape_fill {
+    fill: #A56F80;
 }
 

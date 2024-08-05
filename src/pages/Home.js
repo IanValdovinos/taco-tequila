@@ -7,6 +7,7 @@ import styles from './Home.module.css';
 import Navbar from '../components/Navbar';
 import HeadingOne from '../components/HeadingOne';
 import WindowPicture from '../components/WindowPicture';
+import BaseButton from '../components/BaseButton';
 
 // Import media
 import LogoBlueBackground from '../assets/logo_blue_background.png';
@@ -77,6 +78,16 @@ function Home() {
                     <WindowPicture src={WindowTwo}/>
                     <WindowPicture src={WindowThree}/>
                     <WindowPicture src={WindowFour}/>
+                </div>
+
+                {/* Order Now Button */}
+                <BaseButton additionalClassNames={styles.firstCTAButton} text={'ORDER NOW'} color={'black'}/>
+
+                {/* Bottom curved divider */}
+                <div className={styles.custom_shape_divider_bottom_1722894654}>
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className={styles.shape_fill}></path>
+                    </svg>
                 </div>
             </div>
         </div>
