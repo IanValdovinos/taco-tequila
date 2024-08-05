@@ -1,4 +1,4 @@
-/* ---------- BANNER ---------- */
+/* ########## BANNER ########## */
 .upperBanner {
     width: 100vw;
     height: 100vh;
@@ -47,20 +47,22 @@
 
 .custom_shape_divider_bottom_1722811643 .shape_fill {
     fill: #56f7ff;
+    
 }
 
-/* ---------- FIRST CTA ----------- */
+/* ########## FIRST CTA ########## */
 .firstCTA {
     background-color: #56f7ff;
+    padding: 0 0 3rem 0;
     width: 100%;
-    height: 100rem;
-    display: flex;
-    justify-content: center;
+    height: fit-content;
 }
 
 .firstCTALogoContainer {
     width: 24rem;
     height: 15rem;
+    display: block;
+    margin: 0 auto;
 
     overflow: hidden; /* Ensure content outside the container is hidden */
     position: relative;
@@ -72,3 +74,15 @@
     object-fit: cover; /* Ensures the image covers the container */
     object-position: center; /* Centers the image within the container */
 }
+
+.firstCTAHeading {
+    width: 30rem;
+    margin: 2rem auto;
+}
+
+.windowPictureContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+

@@ -5,9 +5,16 @@ import styles from './Home.module.css';
 
 // Import components
 import Navbar from '../components/Navbar';
+import HeadingOne from '../components/HeadingOne';
+import WindowPicture from '../components/WindowPicture';
 
 // Import media
 import LogoBlueBackground from '../assets/logo_blue_background.png';
+
+import WindowOne from '../assets/frida_1.jpeg';
+import WindowTwo from '../assets/chente.png';
+import WindowThree from '../assets/cantinflas.jpg';
+import WindowFour from '../assets/catrina_1.png';
 
 function Home() {
     // Use states for the navigation bar background color
@@ -56,8 +63,20 @@ function Home() {
 
             {/* ########## CTA SECTION ########## */}
             <div className={styles.firstCTA}>
+                {/* Logo */}
                 <div className={styles.firstCTALogoContainer}>
                     <img src={LogoBlueBackground} alt='Taco Tequila Y Mas Logo'></img>
+                </div>
+
+                {/* Heading */}
+                <HeadingOne additionalClassNames={styles.firstCTAHeading}>JOIN US TODAY FOR AN UNFORGETABLE TIME</HeadingOne>
+
+                {/* Window pictures */}
+                <div className={styles.windowPictureContainer}>
+                    <WindowPicture src={WindowOne}/>
+                    <WindowPicture src={WindowTwo}/>
+                    <WindowPicture src={WindowThree}/>
+                    <WindowPicture src={WindowFour}/>
                 </div>
             </div>
         </div>
