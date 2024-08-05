@@ -1,0 +1,74 @@
+/* ---------- BANNER ---------- */
+.upperBanner {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/test_tacos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navBar {
+    /* background: blue; */
+    height: 0;
+    width: 100%;;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.lowerBanner {
+    background-image: url('../assets/two_tequila_bottles.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+}
+
+.custom_shape_divider_bottom_1722811643 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom_shape_divider_bottom_1722811643 svg {
+    position: relative;
+    display: block;
+    width: calc(147% + 1.3px);
+    height: 107px;
+}
+
+.custom_shape_divider_bottom_1722811643 .shape_fill {
+    fill: #56f7ff;
+}
+
+/* ---------- FIRST CTA ----------- */
+.firstCTA {
+    background-color: #56f7ff;
+    width: 100%;
+    height: 100rem;
+    display: flex;
+    justify-content: center;
+}
+
+.firstCTALogoContainer {
+    width: 24rem;
+    height: 15rem;
+
+    overflow: hidden; /* Ensure content outside the container is hidden */
+    position: relative;
+}
+
+.firstCTALogoContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center; /* Centers the image within the container */
+}

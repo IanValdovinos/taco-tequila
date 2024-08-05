@@ -1,30 +1,25 @@
 import React, { useState, useEffect } from 'react';
 
 // Import styles
-import styles from './Home.module.css';
+import styles from './BannerDesktop.module.css';
 
 // Import components
-import Navbar from '../components/Navbar';
+import Navbar from '../Navbar';
 
-// Import media
-import LogoBlueBackground from '../assets/logo_blue_background.png';
+function Banner() {
+    const [getNavBarBackgroundColor, setNavBarBackgroundColor] = useState('#9DBFC1'); // Initial background color
 
-function Home() {
-    // Use states for the navigation bar background color
-    const [getNavBarBackgroundColor, setNavBarBackgroundColor] = useState('#9DBFC1');
-
-    // Use effect to update the navigation bar background color
     useEffect(() => {
         const handleScroll = () => {
             // Get the current scroll position
             const scrollPosition = window.scrollY;
 
             // Set the scroll threshold (change this value to the point you want the color to change)
-            const changeColorPoint = 800;
+            const changeColorPoint = 1500;
 
             // Update the background color based on scroll position
             if (scrollPosition > changeColorPoint) {
-                setNavBarBackgroundColor('rgba(255, 255, 255, 0.5)'); // New background color after scroll point
+                setNavBarBackgroundColor('orange'); // New background color after scroll point
             } else {
                 setNavBarBackgroundColor('#9DBFC1'); // Original background color
             }
@@ -38,10 +33,9 @@ function Home() {
           window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
+      
     return ( 
         <div>
-            {/* ########## BANNER ########## */}
             <div className={styles.upperBanner}></div>
 
             <div className={styles.navBar}><Navbar background={getNavBarBackgroundColor}/></div>
@@ -53,15 +47,8 @@ function Home() {
                     </svg>
                 </div>
             </div>
-
-            {/* ########## CTA SECTION ########## */}
-            <div className={styles.firstCTA}>
-                <div className={styles.firstCTALogoContainer}>
-                    <img src={LogoBlueBackground} alt='Taco Tequila Y Mas Logo'></img>
-                </div>
-            </div>
         </div>
-     );
+    );
 }
 
-export default Home;
+export default Banner;

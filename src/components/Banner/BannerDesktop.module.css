@@ -1,0 +1,50 @@
+.upperBanner {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/test_tacos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navBar {
+    /* background: blue; */
+    height: 6rem;
+    width: 100%;;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.lowerBanner {
+    background-image: url('../../assets/two_tequila_bottles.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+}
+
+.custom_shape_divider_bottom_1722811643 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom_shape_divider_bottom_1722811643 svg {
+    position: relative;
+    display: block;
+    width: calc(147% + 1.3px);
+    height: 107px;
+}
+
+.custom_shape_divider_bottom_1722811643 .shape_fill {
+    fill: #56f7ff;
+}
+  

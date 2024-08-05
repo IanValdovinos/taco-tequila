@@ -1,0 +1,13 @@
+.navBar {
+    height: 7rem;
+    width: 100%;
+    transition: all linear 1s;
+}
+
+.navBar ul {
+    margin: 0;
+}
+
+.navOption {
+    margin: 0 1rem;
+}

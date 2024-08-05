@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Create by Whale Media for Taco, Tequila Y Mas restaurant.
+
+## Brand Colors
+Light blue: #9DBFC1
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -42,7 +47,9 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 ## References
 How to create a react application from the command line, check out https://www.w3schools.com/react/default.asp
 
-How to add routing (multi-page navigation) to React application, check out https://www.w3schools.com/react/react_router.asp
+How to add routing (multi-page navigation) to React application, check out https://reactrouter.com/en/main
+
+To learn how to add curved edges to a div, check out this [video](https://www.youtube.com/watch?v=tCrzU0VGh1M). The tool used in the video can be found [here](https://www.shapedivider.app/). To use the online tool in the video for a React.js application, you must replace "class" by "className" and replace any dahses (-) with underscores (_), otherwise, the correct styling won't be applied.
 
 ## Learn More
 

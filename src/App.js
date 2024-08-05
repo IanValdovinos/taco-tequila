@@ -2,7 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 
 // Import routing (multi-page naviation)
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// Router
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 // Import application pages
 import Home from './pages/Home';
@@ -12,21 +17,28 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import NoPage from './pages/NoPage';
 
+// Import components
+import Navbar from './components/Navbar';
+
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
+        {/* ----- Heading ----- */}
+        {/* <Navbar /> */}
+
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-            <Route path="menu" element={<Menu />} />
-            <Route path="gallery" element={<Gallery />} />
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="*" element={<NoPage />} />
-          </Route>
+          <Route exact path="/" element={<Home />} />
+          <Route path="menu" element={<Menu />} />
+          <Route path="gallery" element={<Gallery />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
         </Routes>
-      </BrowserRouter>
+
+        {/* ----- Footer ----- */}
+
+      </Router>
     </div>
   );
 }
