@@ -2,10 +2,15 @@
     border: 5px solid brown;
     width: 13rem;
     height: 20rem;
-
     border-radius: 100rem 100rem 0 0;
+    
     overflow: hidden; /* Ensure content outside the container is hidden */
     position: relative;
+
+    /* Shadow effect */
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
 .windowPicture img {

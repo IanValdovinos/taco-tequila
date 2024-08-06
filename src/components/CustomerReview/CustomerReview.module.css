@@ -1,0 +1,60 @@
+.customerReview {
+    position: relative;
+    width: 18rem;
+    height: 28rem;
+    padding: 0;
+
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    transform: translateZ(0);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.customerReviewInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.customerPotrait {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Do a horizontal flip when you move the mouse over the flip box container */
+.customerReview:hover .customerReviewInner {
+    transform: rotateY(180deg) translateZ(0);
+}
+
+.customerReviewFront, .customerReviewBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.customerReviewFront {
+    border: 10px solid rgb(72, 18, 18);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.customerReviewBack {
+    border: 10px solid rgb(72, 18, 18);
+    border-radius: 5px;
+    background-color: #9DBFC1;
+    transform: rotateY(180deg);
+    padding: 1rem;
+    box-sizing: border-box;
+}

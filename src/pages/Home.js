@@ -9,6 +9,7 @@ import HeadingOne from '../components/HeadingOne';
 import WindowPicture from '../components/WindowPicture';
 import BaseButton from '../components/BaseButton';
 import LearnMorePicture from '../components/LearnMorePicture';
+import CustomerReview from '../components/CustomerReview';
 
 // Import media
 import LogoBlueBackground from '../assets/logo_blue_background.png';
@@ -22,6 +23,10 @@ import LearnMorePictureOne from '../assets/test_tacos_2.jpg';
 import LearnMorePictureTwo from '../assets/tequila_shot.jpg';
 import LearnMorePictureThree from '../assets/test_panda_restaurant.jpg';
 import LearnMorePictureFour from '../assets/fajitas_pose.jpg';
+
+import ReviewerOnePotrait from '../assets/test_reviewer_one.jpg';
+import ReviewerTwoPotrait from '../assets/test_reviewer_two.jpg';
+import ReviewerThreePotrait from '../assets/test_reviewer_three.jpg';
 
 
 function Home() {
@@ -105,6 +110,34 @@ function Home() {
                     <LearnMorePicture additionalClassNames={styles.learnMorePictureTwo} title={'First time'} src={LearnMorePictureTwo}>TEQUILA</LearnMorePicture>
                     <LearnMorePicture additionalClassNames={styles.learnMorePictureThree} title={'First time'} src={LearnMorePictureThree}>GREAT TIME</LearnMorePicture>
                     <LearnMorePicture additionalClassNames={styles.learnMorePictureFour} title={'First time'} src={LearnMorePictureFour}>AND MORE</LearnMorePicture>
+                </div>
+            </div>
+
+            {/* ########## SECOND CTA SECTION ########## */}
+            <div className={styles.secondCTA}>
+                
+            </div>
+
+            {/* ########## CUSTOMER REVIEWS ########## */}
+            <div className={styles.customerReviewsSection}>
+                <div className={styles.customerReviewsContainer}>
+                    <CustomerReview src={ReviewerOnePotrait} name={'Alex'}>
+                        The street tacos here are the best outside of Detroit.
+                        Services is quick and easy, menu as easy to navigate.
+                        The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
+                    </CustomerReview>
+
+                    <CustomerReview src={ReviewerTwoPotrait} name={'Alex'}>
+                        The street tacos here are the best outside of Detroit.
+                        Services is quick and easy, menu as easy to navigate.
+                        The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
+                    </CustomerReview>
+
+                    <CustomerReview src={ReviewerThreePotrait} name={'Alex'}>
+                        The street tacos here are the best outside of Detroit.
+                        Services is quick and easy, menu as easy to navigate.
+                        The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
+                    </CustomerReview>
                 </div>
             </div>
 
