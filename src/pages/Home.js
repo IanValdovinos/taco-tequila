@@ -10,6 +10,7 @@ import WindowPicture from '../components/WindowPicture';
 import BaseButton from '../components/BaseButton';
 import LearnMorePicture from '../components/LearnMorePicture';
 import CustomerReview from '../components/CustomerReview';
+import SlideShowOne from '../components/SlideShowOne';
 
 // Import media
 import LogoBlueBackground from '../assets/logo_blue_background.png';
@@ -40,11 +41,11 @@ function Home() {
             const scrollPosition = window.scrollY;
 
             // Set the scroll threshold (change this value to the point you want the color to change)
-            const changeColorPoint = 800;
+            const changeColorPoint = 680;
 
             // Update the background color based on scroll position
             if (scrollPosition > changeColorPoint) {
-                setNavBarBackgroundColor('rgba(255, 255, 255, 0.5)'); // New background color after scroll point
+                setNavBarBackgroundColor('transparent'); // New background color after scroll point
             } else {
                 setNavBarBackgroundColor('#9DBFC1'); // Original background color
             }
@@ -113,10 +114,8 @@ function Home() {
                 </div>
             </div>
 
-            {/* ########## SECOND CTA SECTION ########## */}
-            <div className={styles.secondCTA}>
-                
-            </div>
+            {/* ########## SLIDESHOW ########## */}
+            <SlideShowOne />
 
             {/* ########## CUSTOMER REVIEWS ########## */}
             <div className={styles.customerReviewsSection}>

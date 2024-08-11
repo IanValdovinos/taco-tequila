@@ -3,7 +3,7 @@
 /* ############################ */
 .upperBanner {
     width: 100vw;
-    height: 42rem;
+    height: 41rem;
     background-image: url('../assets/test_tacos.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -129,7 +129,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: fit-content;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .learnMorePictureOne {

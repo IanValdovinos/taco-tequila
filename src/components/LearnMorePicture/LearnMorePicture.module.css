@@ -12,7 +12,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+
+    transition: all 0.3s;
 }
+
+.learnMorePicture:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+
+    /* Shadow effect */
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+}   
 
 .learnMorePictureTitle {
     color: white;
