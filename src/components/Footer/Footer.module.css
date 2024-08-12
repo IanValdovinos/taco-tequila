@@ -1,0 +1,18 @@
+.footer {
+    background-color: #9DBFC1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    
+}
+
+.footerMap {
+    border: 0;
+
+    width: 30em;
+    height: 30em;
+}
+
+.companyNameLink {
+    color: black;
+}

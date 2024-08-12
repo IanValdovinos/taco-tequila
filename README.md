@@ -6,6 +6,7 @@ Create by Whale Media for Taco, Tequila Y Mas restaurant.
 
 ## Brand Colors
 Light blue: #9DBFC1
+
 Light coral: #A56F80
 
 ## Available Scripts
