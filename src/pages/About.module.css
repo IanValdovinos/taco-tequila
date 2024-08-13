@@ -1,0 +1,57 @@
+.navBar {
+    position: fixed;
+    z-index: 1000;
+}
+
+.banner {
+    background-image: url('../assets/test_restaurant.webp');
+    height: 35rem;
+    position: relative;
+}
+
+.aboutTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.aboutUsContentContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #9DBFC1;
+    padding: 2rem;
+}
+
+.famPhotoTitle {
+    width: 90%;
+    margin: auto;
+}
+
+.familyPhotoContainer {
+    width: 40rem;
+    height: 30rem;
+    margin: auto;
+
+    /* Child image adjustment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.familyPhotoContainer img {
+    flex-shrink: 0;
+    width: 100%;
+    /* height: 100%; */
+    transition: all 0.3s;
+}
+
+.aboutUsTextContainer {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}

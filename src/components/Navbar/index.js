@@ -13,9 +13,11 @@ import TransparentLogo from '../../assets/transparent_logo.png';
 import InstagramLogo from '../../assets/icons/facebook_white.webp';
 import FacebookLogo from '../../assets/icons/instagram_white.webp';
 
-function Navbar({additionalClassNames, background}) {
+function Navbar({additionalClassNames, background, position}) {
+    
+
     return ( 
-        <div className={`${additionalClassNames} ${styles.navBar}`} style={{backgroundColor: background}}>
+        <div className={`${additionalClassNames} ${styles.navBar}`} style={{backgroundColor: background, position: position}}>
             {/* Logo */}
             <img className={styles.logo} src={TransparentLogo} alt='Logo'/>
 
