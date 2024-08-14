@@ -16,6 +16,9 @@ import Footer from '../components/Footer';
 // Import media
 import LogoBlueBackground from '../assets/logo_blue_background.png';
 
+import UpperBannerCover from '../assets/test_tacos.jpg';
+import UpperBannerVideo from '../assets/videos/test_cooking.mp4';
+
 import WindowOne from '../assets/frida_1.jpeg';
 import WindowTwo from '../assets/chente.png';
 import WindowThree from '../assets/cantinflas.jpg';
@@ -64,7 +67,15 @@ function Home() {
     return ( 
         <div>
             {/* ########## BANNER ########## */}
-            <div className={styles.upperBanner}></div>
+            <div className={styles.upperBanner}>
+                {/* Background video */}
+                <div className={styles.bannerVideo}>
+                    <video className={styles.bannerVideoContent} autoPlay muted loop poster={UpperBannerCover}>
+                        <source src={UpperBannerVideo} type="video/webm" />
+                        Your browser is not supported!
+                    </video>
+                </div> 
+            </div>
 
             <div className={styles.navBar}><Navbar background={getNavBarBackgroundColor}/></div>
 

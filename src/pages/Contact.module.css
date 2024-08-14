@@ -1,0 +1,51 @@
+.contactUsPage {
+    height: 50rem;
+}
+
+.navBar {
+    position: fixed;
+    z-index: 1000;
+}
+
+.contactUsPageContent {
+    position: relative;
+    background-color: #A56F80;
+    height: 50rem;
+}
+
+.contactUsPageContentContainer {
+    border: 2px solid red;
+    position: absolute;
+    left: 50%;
+    top: 12rem;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.imageContainer {
+    /* border: 2px solid green; */
+    width: 20rem;
+    height: 30rem;
+
+    /* Child image adjustment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imageContainer img {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.contactUsTitle {
+    width: max-content;
+    color: white;
+}
+
+.formContainer {
+    border: 2px solid blue;
+}
