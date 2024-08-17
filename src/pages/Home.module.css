@@ -28,6 +28,13 @@
     -webkit-filter: blur(3px);
 }
 
+.bannerLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .navBar {
     /* background: blue; */
     height: 0;
@@ -75,7 +82,7 @@
 /* ############################### */
 .firstCTA {
     background-color: #9DBFC1;
-    padding: 0rem 0 6rem 0;
+    padding: 0rem 0 8.8rem 0;
     width: 100%;
     height: fit-content;
     position: relative;
@@ -180,13 +187,16 @@
 /* ########## CUSTOMER REVIEWS SECTION ########## */
 /* ############################################## */
 
+.reviewsTitle {
+    color: white;
+}
+
 .customerReviewsSection {
     border-top: 2px solid white;
     background-color: #A56F80;
     width: 100%;
-    padding: 5rem 0;
     position: relative;
-    padding-bottom: 8rem;
+    padding: 1rem 0 8rem 0;
 }
 
 .customerReviewsContainer {
@@ -194,7 +204,7 @@
     width: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    gap: 7rem;
 }
 
 /* Curved divider */

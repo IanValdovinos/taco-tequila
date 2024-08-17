@@ -15,6 +15,7 @@ import Footer from '../components/Footer';
 
 // Import media
 import LogoBlueBackground from '../assets/logo_blue_background.png';
+import LogoTransparentBackground from '../assets/transparent_logo.png';
 
 import UpperBannerCover from '../assets/test_tacos.jpg';
 import UpperBannerVideo from '../assets/videos/test_cooking.mp4';
@@ -75,6 +76,9 @@ function Home() {
                         Your browser is not supported!
                     </video>
                 </div> 
+
+                {/* Logo in upper banner */}
+                <img className={styles.bannerLogo} src={LogoTransparentBackground} alt='Banner logo'></img>
             </div>
 
             <div className={styles.navBar}><Navbar background={getNavBarBackgroundColor}/></div>
@@ -131,6 +135,8 @@ function Home() {
 
             {/* ########## CUSTOMER REVIEWS ########## */}
             <div className={styles.customerReviewsSection}>
+                <HeadingOne additionalClassNames={styles.reviewsTitle}>CUSTOMER REVIEWS</HeadingOne>
+
                 <div className={styles.customerReviewsContainer}>
                     <CustomerReview src={ReviewerOnePotrait} name={'Alex'}>
                         The street tacos here are the best outside of Detroit.

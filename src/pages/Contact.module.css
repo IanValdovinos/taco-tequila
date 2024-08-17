@@ -10,11 +10,12 @@
 .contactUsPageContent {
     position: relative;
     background-color: #A56F80;
-    height: 50rem;
+    height: 60rem;
 }
 
 .contactUsPageContentContainer {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    width: 80%;
     position: absolute;
     left: 50%;
     top: 12rem;
@@ -24,16 +25,29 @@
     gap: 5rem;
 }
 
+.imageSection {
+    position: relative;
+}
+
 .imageContainer {
-    /* border: 2px solid green; */
-    width: 20rem;
-    height: 30rem;
+    position: absolute;
+    width: 25rem;
+    height: 35rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
 
     /* Child image adjustment */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
+    /* Shadow effect */
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
 .imageContainer img {
@@ -41,11 +55,54 @@
     width: 100%;
 }
 
+/* ###################################### */
+/* ############ CONTACT FORM ############ */
+/* ###################################### */
 .contactUsTitle {
     width: max-content;
     color: white;
 }
 
+.formSection {
+    /* border: 2px solid blue; */
+}
+
 .formContainer {
-    border: 2px solid blue;
+    /* border: 2px solid green; */
+    text-align: left;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nameContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fullSizeInput {
+    width: 95%;
+    height: 2rem;
+    font-size: 1.5rem;
+
+    background-color: #A56F80;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.inputSection {
+    display: block;
+    margin: 1rem 0;
+}
+
+.messageTextArea {
+    font-size: 1.5rem;
+    width: 95%;
+    height: 7rem;
+
+    background-color: #A56F80;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
 }
