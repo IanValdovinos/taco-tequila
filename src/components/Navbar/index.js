@@ -6,6 +6,7 @@ import styles from './Navbar.module.css';
 
 // Import components
 import BaseButton from '../BaseButton';
+import ParagraphOne from '../ParagraphOne';
 
 // Import media
 import TransparentLogo from '../../assets/transparent_logo.png';
@@ -24,23 +25,23 @@ function Navbar({additionalClassNames, background, position}) {
             {/* Navigation Options */}
             <div className={styles.optionsContainer}>
                 <NavLink className={styles.navbarLink} to="/">
-                    Home
+                    <ParagraphOne>Home</ParagraphOne>
                 </NavLink>
 
                 <NavLink className={styles.navbarLink} to="/menu">
-                    Menu
+                    <ParagraphOne>Menu</ParagraphOne>
                 </NavLink>
 
                 <NavLink className={styles.navbarLink} to="/gallery">
-                    Gallery
+                    <ParagraphOne>Gallery</ParagraphOne>
                 </NavLink>
 
                 <NavLink className={styles.navbarLink} to="/about">
-                    About Us
+                    <ParagraphOne>About Us</ParagraphOne>
                 </NavLink>
 
                 <NavLink className={styles.navbarLink} to="/contact">
-                    Contact Us
+                    <ParagraphOne>Contact Us</ParagraphOne>
                 </NavLink>
 
                 <img className={styles.socialMediaIcon} src={InstagramLogo} alt='Instagram logo'/>

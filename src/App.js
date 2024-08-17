@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 // Import routing (multi-page naviation)
@@ -18,11 +17,15 @@ import Contact from './pages/Contact';
 import NoPage from './pages/NoPage';
 
 // Import components
-import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
+      {/* ------------- FONTS ------------ */}
+      <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+      <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet"></link>
+
       <Router>
         {/* ----- Heading ----- */}
         {/* <Navbar /> */}
