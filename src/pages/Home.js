@@ -46,7 +46,7 @@ function Home() {
             const scrollPosition = window.scrollY;
 
             // Set the scroll threshold (change this value to the point you want the color to change)
-            const changeColorPoint = 680;
+            const changeColorPoint = 650;
 
             // Update the background color based on scroll position
             if (scrollPosition > changeColorPoint) {
@@ -131,7 +131,7 @@ function Home() {
             </div>
 
             {/* ########## SLIDESHOW ########## */}
-            <SlideShowOne />
+            {/* <SlideShowOne /> */}
 
             {/* ########## CUSTOMER REVIEWS ########## */}
             <div className={styles.customerReviewsSection}>
@@ -168,7 +168,7 @@ function Home() {
             </div>
 
             {/* ########## FOOTER ########## */}
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
 
         </div>
      );

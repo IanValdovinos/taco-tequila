@@ -3,7 +3,8 @@
 /* ############################ */
 .upperBanner {
     width: 100vw;
-    height: 41rem;
+    /* height: 41rem; */
+    height: 100vh;
     position: relative;
     /* background-image: url('../assets/test_tacos.jpg');
     background-repeat: no-repeat;
@@ -25,6 +26,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: 60%;
     -webkit-filter: blur(3px);
 }
 
@@ -33,12 +35,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 40rem;
 }
 
 .navBar {
-    /* background: blue; */
     height: 0;
-    width: 100%;;
+    width: 100%;
+    margin-top: -8rem;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
@@ -50,6 +54,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: 50%;
     width: 100vw;
     height: 100vh;
 
@@ -77,6 +82,15 @@
     
 }
 
+/* --- Media Queries --- */
+@media screen and (max-width: 70rem) {
+    
+}
+
+@media screen and (max-width: 50rem) {
+
+}
+
 /* ############################### */
 /* ########## FIRST CTA ########## */
 /* ############################### */
@@ -86,6 +100,8 @@
     width: 100%;
     height: fit-content;
     position: relative;
+
+    display: none;
 }
 
 .firstCTALogoContainer {
@@ -141,12 +157,24 @@
     fill: #A56F80;
 }
 
+
+/* --- Media Queries --- */
+@media screen and (max-width: 70rem) {
+    
+}
+
+@media screen and (max-width: 50rem) {
+    
+}
+
 /* ################################################ */
 /* ########## LEARN MORE PICTURE SECTION ########## */
 /* ################################################ */
 .learnMorePicturesSection {
     background-color: #A56F80;
     padding: 3rem 0;
+
+    display: none;
 }
 
 .learnMorePicturesContainer {
@@ -179,6 +207,16 @@
     border-radius: 0 50% 50% 0;
 }
 
+
+/* --- Media Queries --- */
+@media screen and (max-width: 70rem) {
+    
+}
+
+@media screen and (max-width: 50rem) {
+    
+}
+
 /* ######################################## */
 /* ########## SECOND CTA SECTION ########## */
 /* ######################################## */
@@ -187,16 +225,18 @@
 /* ########## CUSTOMER REVIEWS SECTION ########## */
 /* ############################################## */
 
-.reviewsTitle {
-    color: white;
-}
-
 .customerReviewsSection {
     border-top: 2px solid white;
     background-color: #A56F80;
     width: 100%;
     position: relative;
     padding: 1rem 0 8rem 0;
+
+    display: none;
+}
+
+.reviewsTitle {
+    color: white;
 }
 
 .customerReviewsContainer {
@@ -227,6 +267,16 @@
 
 .custom_shape_divider_bottom_1723407545 .shape_fill {
     fill: #9DBFC1;
+}
+
+
+/* --- Media Queries --- */
+@media screen and (max-width: 70rem) {
+    
+}
+
+@media screen and (max-width: 50rem) {
+    
 }
 
 
