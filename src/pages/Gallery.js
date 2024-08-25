@@ -30,49 +30,62 @@ function Gallery() {
             </div>
 
             {/* ########## GALLERY CONTENT ########## */}
-            <div className={styles.galleryContainer}>
-                {/* Row 1 */}
-                <div className={styles.photoContainer}>
-                    <img src={PhotoOne} alt='Gallery item'></img>
-                </div>
-                <div className={styles.photoContainer}>
-                    <img src={PhotoTwo} alt='Gallery item'></img>
-                </div>
-                <div className={styles.photoContainer}>
-                    <img src={PhotoThree} alt='Gallery item'></img>
+            <div className={styles.mediaContent}>
+                {/* Left Column */}
+                <div className={styles.mediaContentColumn}>
+                    <div className={`${styles.pictureFrame} ${styles.horizontalPicture}`}>
+                        <img src={PhotoOne} alt={'food'}/>
+                    </div>
+
+                    <div className={`${styles.pictureFrame} ${styles.verticalPicture}`}>
+                        <img src={PhotoTwo} alt={'food'}/>
+                    </div>
+
+                    <div className={`${styles.pictureFrame} ${styles.squarePicture}`}>
+                        <img src={PhotoThree} alt={'food'}/>
+                    </div>
+
+                    <div className={`${styles.pictureFrame} ${styles.horizontalPicture}`}>
+                        <img src={PhotoFour} alt={'food'}/>
+                    </div>
                 </div>
 
-                {/* Row 2 */}
-                <div className={styles.photoContainer}>
-                    <img src={PhotoFour} alt='Gallery item'></img>
-                </div>
-                <div className={styles.photoContainer}>
-                    <img src={PhotoFive} alt='Gallery item'></img>
-                </div>
-                <div className={styles.photoContainer}>
-                    <img src={PhotoSix} alt='Gallery item'></img>
+                {/* Middle Column */}
+                <div  className={styles.mediaContentColumn}>
+                    <div className={`${styles.pictureFrame} ${styles.verticalPicture}`}>
+                        <img src={PhotoFive} alt={'food'}/>
+                    </div>
+
+                    <div className={`${styles.pictureFrame} ${styles.squarePicture}`}>
+                        <img src={PhotoSix} alt={'food'}/>
+                    </div>
+
+                    <div className={`${styles.pictureFrame} ${styles.horizontalPicture}`}>
+                        <img src={PhotoSeven} alt={'food'}/>
+                    </div>
+
+                    <div className={`${styles.pictureFrame} ${styles.horizontalPicture}`}>
+                        <img src={PhotoEight} alt={'food'}/>
+                    </div>
                 </div>
 
-                {/* Row 3 */}
-                <div className={styles.photoContainer}>
-                    <img src={PhotoSeven} alt='Gallery item'></img>
-                </div>
-                <div className={styles.photoContainer}>
-                    <img src={PhotoEight} alt='Gallery item'></img>
-                </div>
-                <div className={styles.photoContainer}>
-                    <img src={PhotoNine} alt='Gallery item'></img>
-                </div>
+                {/* Right Column */}
+                <div className={`${styles.mediaContentColumn} ${styles.rightColumn}`}>
+                    <div className={`${styles.pictureFrame} ${styles.horizontalPicture}`}>
+                        <img src={PhotoNine} alt={'food'}/>
+                    </div>
 
-                {/* Row 4 */}
-                <div className={styles.photoContainer}>
-                    <img src={PhotoTen} alt='Gallery item'></img>
-                </div>
-                <div className={styles.photoContainer}>
-                    <img src={PhotoEleven} alt='Gallery item'></img>
-                </div>
-                <div className={styles.photoContainer}>
-                    <img src={PhotoTwelve} alt='Gallery item'></img>
+                    <div className={`${styles.pictureFrame} ${styles.squarePicture}`}>
+                        <img src={PhotoTen} alt={'food'}/>
+                    </div>
+
+                    <div className={`${styles.pictureFrame} ${styles.horizontalPicture}`}>
+                        <img src={PhotoEleven} alt={'food'}/>
+                    </div>
+
+                    <div className={`${styles.pictureFrame} ${styles.verticalPicture}`}>
+                        <img src={PhotoTwelve} alt={'food'}/>
+                    </div>
                 </div>
             </div>
 
