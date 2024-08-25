@@ -1,0 +1,30 @@
+.navBar {
+    position: fixed;
+    z-index: 1000;
+}
+
+.menuPage {
+    background-color: black;
+}
+
+.ghostSpace {
+    content: '';
+    height: 7rem;
+}
+
+.menuPageTitle {
+    color: white;
+}
+
+.menuPageContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 2rem 2rem 2rem;
+    box-sizing: border-box;
+}
+
+.singleMenuPage {
+    width: 100%;
+}
