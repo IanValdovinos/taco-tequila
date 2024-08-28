@@ -101,7 +101,7 @@
     height: fit-content;
     position: relative;
 
-    display: none;
+    /* display: none; */
 }
 
 .firstCTALogoContainer {
@@ -129,7 +129,9 @@
 .windowPictureContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
     justify-items: center;
+    margin: auto;
 }
 
 .firstCTAButton {
@@ -160,11 +162,19 @@
 
 /* --- Media Queries --- */
 @media screen and (max-width: 70rem) {
-    
+
 }
 
 @media screen and (max-width: 50rem) {
+    .firstCTAHeading {
+        width: 100%;
+    }
     
+    .windowPictureContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 100%;
+    } 
 }
 
 /* ################################################ */

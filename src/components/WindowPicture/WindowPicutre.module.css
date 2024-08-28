@@ -19,3 +19,17 @@
     object-fit: cover; /* Ensures the image covers the container */
     object-position: center; /* Centers the image within the container */
 }
+
+/* --- Media Queries --- */
+@media screen and (max-width: 70rem) {
+    .windowPicture {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .windowPicture {
+        width: 9rem;
+        height: 13rem;
+    }
+}
