@@ -169,7 +169,7 @@
     .firstCTAHeading {
         width: 100%;
     }
-    
+
     .windowPictureContainer {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
@@ -184,13 +184,14 @@
     background-color: #A56F80;
     padding: 3rem 0;
 
-    display: none;
+    /* display: none; */
 }
 
 .learnMorePicturesContainer {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     width: fit-content;
     gap: 2rem;
 }
@@ -220,11 +221,38 @@
 
 /* --- Media Queries --- */
 @media screen and (max-width: 70rem) {
+    .learnMorePicturesContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .learnMorePictureOne {
+        grid-column: 1 / 2;
+        border-radius: 50% 0 0 50%;
+    }
     
+    .learnMorePictureTwo {
+        grid-column: 2 / 3;
+        border-radius: 0 50% 0 0;
+    }
+    
+    .learnMorePictureThree {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        border-radius: 0 0 0 50%;
+    }
+    
+    .learnMorePictureFour {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        border-radius: 0 50% 50% 0;
+    }
 }
 
 @media screen and (max-width: 50rem) {
-    
+    .learnMorePicturesContainer {
+        width: 100%;
+        gap: 0rem;
+    }
 }
 
 /* ######################################## */

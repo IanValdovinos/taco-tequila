@@ -131,7 +131,7 @@ function Home() {
             </div>
 
             {/* ########## SLIDESHOW ########## */}
-            {/* <SlideShowOne /> */}
+            <SlideShowOne />
 
             {/* ########## CUSTOMER REVIEWS ########## */}
             <div className={styles.customerReviewsSection}>
