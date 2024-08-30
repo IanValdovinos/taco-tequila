@@ -70,6 +70,13 @@ function Contact() {
                     <div className={styles.formSection}>
                         <HeadingOne additionalClassNames={styles.contactUsTitle}>CONTACT US</HeadingOne>
 
+                        <div className={styles.imageContainerMobileSection}>
+                            <div className={styles.imageContainerMobile}>
+                                <img src={ContactUsImage} alt='Phone call'></img>
+                            </div>
+                        </div>
+                        
+
                         {/* Form */}
                         <div className={styles.formContainer}>
                             {/* Full name section */}
@@ -121,7 +128,7 @@ function Contact() {
             
 
             {/* ########## FOOTER ########## */}
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </div>
      );
 }

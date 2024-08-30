@@ -1,5 +1,5 @@
 .contactUsPage {
-    height: 50rem;
+    height: fit-content;
 }
 
 .navBar {
@@ -8,18 +8,15 @@
 }
 
 .contactUsPageContent {
-    position: relative;
+    padding-top: 8rem;
     background-color: #A56F80;
-    height: 60rem;
+    height: fit-content;
 }
 
 .contactUsPageContentContainer {
     /* border: 2px solid red; */
     width: 80%;
-    position: absolute;
-    left: 50%;
-    top: 12rem;
-    transform: translateX(-50%);
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
@@ -54,6 +51,34 @@
     flex-shrink: 0;
     width: 100%;
 }
+
+.imageContainerMobileSection {
+    display: none;
+}
+
+.imageContainerMobile {
+    width: 80vw;
+    height: 100vw;
+    border-radius: 15px;
+
+    /* Child image adjustment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    /* Shadow effect */
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.imageContainerMobile img {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+
 
 /* ###################################### */
 /* ############ CONTACT FORM ############ */
@@ -105,4 +130,27 @@
     border: 1px solid white;
     border-radius: 5px;
     color: white;
+}
+
+/* --- Media Queries --- */
+@media screen and (max-width: 70rem) {
+    .contactUsPageContentContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .imageSection {
+        display: none;
+    }
+
+    .imageContainerMobileSection {
+        display: block;
+    }
+
+    .fullSizeInput {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    
 }
