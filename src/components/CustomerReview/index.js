@@ -17,8 +17,6 @@ function CustomerReview({name, children, src, additionalClassNames}) {
                 <div className={styles.customerReviewFront}>
                     <div className={styles.frameContainer}>
                         <img src={src} alt="reviewer potrait" className={styles.customerPotrait} />
-                        
-                        <img src={Frame} alt='reviewer potrait frame' className={styles.customerPotraitFrame}></img>
                     </div>
                 </div>
 

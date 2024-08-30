@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
 // Import styles
 import styles from './Home.module.css';
 
@@ -137,6 +140,7 @@ function Home() {
             <div className={styles.customerReviewsSection}>
                 <HeadingOne additionalClassNames={styles.reviewsTitle}>CUSTOMER REVIEWS</HeadingOne>
 
+                {/* DESKTOP VIEW */}
                 <div className={styles.customerReviewsContainer}>
                     <CustomerReview src={ReviewerOnePotrait} name={'Alex'}>
                         The street tacos here are the best outside of Detroit.
@@ -155,6 +159,41 @@ function Home() {
                         Services is quick and easy, menu as easy to navigate.
                         The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
                     </CustomerReview>
+
+                    <CustomerReview src={ReviewerThreePotrait} name={'Alex'}>
+                        The street tacos here are the best outside of Detroit.
+                        Services is quick and easy, menu as easy to navigate.
+                        The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
+                    </CustomerReview>
+                </div>
+
+                {/* MOBILE VIEW */}
+                <div className={styles.customerReviewsContainerCarousel}>
+                    <Carousel infiniteLoop={true} showIndicators={false}>
+                        <CustomerReview src={ReviewerOnePotrait} name={'Alex'}>
+                            The street tacos here are the best outside of Detroit.
+                            Services is quick and easy, menu as easy to navigate.
+                            The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
+                        </CustomerReview>
+
+                        <CustomerReview src={ReviewerTwoPotrait} name={'Alex'}>
+                            The street tacos here are the best outside of Detroit.
+                            Services is quick and easy, menu as easy to navigate.
+                            The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
+                        </CustomerReview>
+
+                        <CustomerReview src={ReviewerThreePotrait} name={'Alex'}>
+                            The street tacos here are the best outside of Detroit.
+                            Services is quick and easy, menu as easy to navigate.
+                            The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
+                        </CustomerReview>
+
+                        <CustomerReview src={ReviewerThreePotrait} name={'Alex'}>
+                            The street tacos here are the best outside of Detroit.
+                            Services is quick and easy, menu as easy to navigate.
+                            The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
+                        </CustomerReview>       
+                    </Carousel>
                 </div>
 
                 {/* Curved divider */}
