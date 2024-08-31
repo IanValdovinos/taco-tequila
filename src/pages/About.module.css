@@ -26,12 +26,13 @@
 
 .famPhotoTitle {
     width: 90%;
-    margin: auto;
+    margin: 2rem auto;
 }
 
 .familyPhotoContainer {
-    width: 40rem;
-    height: 30rem;
+    width: 90%;
+    max-width: 40rem;
+    height: fit-content;
     margin: auto;
 
     /* Child image adjustment */
@@ -46,7 +47,6 @@
 .familyPhotoContainer img {
     flex-shrink: 0;
     width: 100%;
-    /* height: 100%; */
     transition: all 0.3s;
 }
 
@@ -54,4 +54,26 @@
     display: flex;
     align-items: center;
     padding: 2rem;
+}
+
+/* --- Media Queries --- */
+@media screen and (max-width: 70rem) {
+    .aboutUsContentContainer {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+
+    .aboutUsTextContainer {
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contentParagraph {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    
 }

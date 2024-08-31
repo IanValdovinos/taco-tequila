@@ -39,17 +39,16 @@ function About() {
                 {/* About Us text */}
                 <div className={styles.aboutUsTextContainer}>
                     <div>
-                        <ParagraphOne>BEGINNING IN 20XX WITH THE SUCCESS OF TACO TIENDA, WE NOW INTRODUCE OUR NEWEST VENTURE - TACO TEQUILA Y MAS.</ParagraphOne>
-                        <ParagraphOne>OUR GOAL IS TO DELIVER A FUN MEXICAN EXPERIENCE WHILE MAINTAINING THE AUTHENTIC FLAVORS WE'RE KNOWN FOR.</ParagraphOne>
-                        <ParagraphOne>WE LOOK FORWARD TO YOU EXPERIENCING THE MOST AUTHENTIC ATMOSPHERE AROUND</ParagraphOne>
-                        <ParagraphOne>BEGINNING IN 20XX WITH THE SUCCESS OF TACO TIENDA, WE NOW INTRODUCE OUR NEWEST VENTURE - TACO TEQUILA Y MAS.</ParagraphOne>
+                        <ParagraphOne additionalClassNames={styles.contentParagraph}>
+                            After the succession of Taco Tienda restaurant, we want to welcome you to Taco Tequila Y Mas, where tradition meets modernity. Our restaurant is dedicated to preserving the rich, authentic flavors of Mexico while infusing them with a modern, stylish twist. We take pride in crafting each dish with time-honored recipes and the freshest ingredients, resulting in tacos that burst with genuine flavor and character. Complement your meal with our curated selection of premium tequilas, each carefully chosen to enhance your dining experience. At Taco Tequila Y Mas, we celebrate the vibrant essence of Mexican cuisine in an elegant, inviting atmosphere that reflects our passion for both tradition and innovation.
+                        </ParagraphOne>
                         <BaseButton color={'black'} text={'MAKE A RESERVATION'}></BaseButton>
                     </div>
                 </div>
             </div>
 
             {/* ########## ABOUT US CONTENT ########## */}
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </div>
      );
 }

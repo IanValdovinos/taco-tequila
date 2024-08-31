@@ -4,3 +4,14 @@
     font-style: normal;
     font-size: 3rem;
 }
+
+/* --- Media Queries --- */
+@media screen and (max-width: 70rem) {
+
+}
+
+@media screen and (max-width: 50rem) {
+    .headingTwoText {
+        font-size: 1.5rem;
+    }
+}
