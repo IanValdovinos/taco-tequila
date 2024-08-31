@@ -1,0 +1,43 @@
+.navBar {
+    height: 8rem;
+    width: 100%;
+    transition: all linear 0.3s;
+    backdrop-filter: blur(20px);
+    border: 3px solid white;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.logo {
+    height: 7rem;
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY( -50%);
+}
+
+.optionsContainer {
+    width: fit-content;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.navbarLink {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.socialMediaIcon {
+    width: 2rem;
+    margin: 0 1rem;
+}
+
+.navBarButton {
+    margin-left: 1.5rem;
+}

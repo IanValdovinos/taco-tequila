@@ -36,3 +36,54 @@
     transform: rotate(360deg);
   }
 }
+
+/* ################################################## */
+/* ############### OVERLAY NAVIGATION ############### */
+/* ################################################## */
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100vh;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1000000; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(165, 111, 128);
+  background-color: rgba(165, 111, 128, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* The button used to close the  */
+.closeButton {
+  color: white;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 2rem;
+  right: 2rem;
+  font-size: 60px;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+}
+
+/* Position the content inside the overlay */
+.overlayContent {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  direction: rtl; /* Set the text direction to right-to-left */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+/* The navigation links inside the overlay */
+.navbarLink {
+  color: white;
+  font-size: 2.5rem;
+  text-decoration: none;
+}

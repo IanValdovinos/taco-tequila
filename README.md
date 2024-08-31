@@ -53,6 +53,8 @@ How to add routing (multi-page navigation) to React application, check out https
 
 To learn how to add curved edges to a div, check out this [video](https://www.youtube.com/watch?v=tCrzU0VGh1M). The tool used in the video can be found [here](https://www.shapedivider.app/). To use the online tool in the video for a React.js application, you must replace "class" by "className" and replace any dahses (-) with underscores (_), otherwise, the correct styling won't be applied.
 
+The mobile navigation bar is one of the most complex elements in the page. The implementation was based on [this article](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp). There are two components to the mobile navigation bar: The mobile navigation bar itself and the the overlaying screen that contains the available options. The mobile navigation bar is a subcomponent living in the Navbar component. The overlying screen is a fixed div living in the App.js file. 
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
