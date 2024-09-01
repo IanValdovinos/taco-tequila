@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './About.module.css';
 
 // Import media
-import FamilyPicture from '../assets/test_family.jpg';
+import AboutUsPicture from '../assets/test_restaurant_inside.jpg';
 
 // Import components
 import Navbar from '../components/Navbar';
@@ -30,9 +30,9 @@ function About() {
             <div className={styles.aboutUsContentContainer}>
                 {/* Picture and title */}
                 <div>
-                    <HeadingTwo additionalClassNames={styles.famPhotoTitle}>AN AUTHENTIC EXPERIENCE BROUGHT BY AN AUTHENTIC FAMILY</HeadingTwo>
+                    <HeadingTwo additionalClassNames={styles.famPhotoTitle}>AN AUTHENTIC EXPERIENCE AT AN AUTHENTIC PLACE</HeadingTwo>
                     <div className={styles.familyPhotoContainer}>
-                        <img src={FamilyPicture} alt='Family'></img>
+                        <img src={AboutUsPicture} alt='Family'></img>
                     </div>
                 </div>
                 

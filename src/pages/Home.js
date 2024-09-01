@@ -172,25 +172,21 @@ function Home() {
                     <CustomerReview src={ReviewerOnePotrait} name={'Alex'}>
                         The street tacos here are the best outside of Detroit.
                         Services is quick and easy, menu as easy to navigate.
-                        The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
                     </CustomerReview>
 
                     <CustomerReview src={ReviewerTwoPotrait} name={'Alex'}>
                         The street tacos here are the best outside of Detroit.
                         Services is quick and easy, menu as easy to navigate.
-                        The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
                     </CustomerReview>
 
                     <CustomerReview src={ReviewerThreePotrait} name={'Alex'}>
                         The street tacos here are the best outside of Detroit.
                         Services is quick and easy, menu as easy to navigate.
-                        The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
                     </CustomerReview>
 
                     <CustomerReview src={ReviewerThreePotrait} name={'Alex'}>
                         The street tacos here are the best outside of Detroit.
                         Services is quick and easy, menu as easy to navigate.
-                        The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
                     </CustomerReview>
                 </div>
 
@@ -200,25 +196,21 @@ function Home() {
                         <CustomerReview src={ReviewerOnePotrait} name={'Alex'}>
                             The street tacos here are the best outside of Detroit.
                             Services is quick and easy, menu as easy to navigate.
-                            The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
                         </CustomerReview>
 
                         <CustomerReview src={ReviewerTwoPotrait} name={'Alex'}>
                             The street tacos here are the best outside of Detroit.
                             Services is quick and easy, menu as easy to navigate.
-                            The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
                         </CustomerReview>
 
                         <CustomerReview src={ReviewerThreePotrait} name={'Alex'}>
                             The street tacos here are the best outside of Detroit.
                             Services is quick and easy, menu as easy to navigate.
-                            The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
                         </CustomerReview>
 
                         <CustomerReview src={ReviewerThreePotrait} name={'Alex'}>
                             The street tacos here are the best outside of Detroit.
                             Services is quick and easy, menu as easy to navigate.
-                            The ambience leaves a little bit desired, there are a couple of tables to eat your lunch, we often do takeout and take it with us.
                         </CustomerReview>       
                     </Carousel>
                 </div>

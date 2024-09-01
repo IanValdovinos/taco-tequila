@@ -34,6 +34,12 @@
     max-width: 40rem;
     height: fit-content;
     margin: auto;
+    border-radius: 10px;
+
+    /* Shadow effect */
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 
     /* Child image adjustment */
     display: flex;
@@ -48,6 +54,10 @@
     flex-shrink: 0;
     width: 100%;
     transition: all 0.3s;
+}
+
+.familyPhotoContainer:hover img {
+    transform: scale(1.2);
 }
 
 .aboutUsTextContainer {
