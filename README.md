@@ -58,6 +58,8 @@ The mobile navigation bar is one of the most complex elements in the page. The i
 ## Z-Indeces
 Navbar (Desktop) - 10
 
+Quick access bottle - 15
+
 Navbar Overlay (Mobile) - 20
 
 Welcome Screen - 30

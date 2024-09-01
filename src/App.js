@@ -21,6 +21,7 @@ import NoPage from './pages/NoPage';
 
 // Import components
 import WelcomeScreen from './components/WelcomeScreen';
+import QuickAccessBar from './components/QuickAccessBar';
 
 function App() {
 
@@ -77,6 +78,9 @@ function App() {
 
         {/* ########## WELCOME SCREEN ########## */}
         <WelcomeScreen/>
+
+        {/* ########## QUICK ACCESS BAR ########## */}
+        <QuickAccessBar />
 
         {/* ########## PAGE CONTENT ########## */}
         <Routes>
