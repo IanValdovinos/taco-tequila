@@ -27,17 +27,23 @@ function WelcomeScreenMobile({additionalClassnames}) {
                 <img className={styles.Logo} src={TransparentLogo} alt='Log'/>
 
                 <div className={styles.optionsContainer}>
-                    <p>Order Online</p>
+                    <NavLink className={styles.navLink} onClick={handleOptionSelect} to="/">
+                        <p>Order Online</p>
+                    </NavLink>
 
-                    <NavLink className='navbarLink' onClick={handleOptionSelect} to="/menu">
+                    <NavLink className={styles.navLink} onClick={handleOptionSelect} to="/menu">
                         <p>View Menu</p>
                     </NavLink>
                     
-                    <p>Reservations</p>
+                    <NavLink className={styles.navLink} onClick={handleOptionSelect} to="/home">
+                        <p>Reservations</p>
+                    </NavLink>
                     
-                    <p>Directions</p>
+                    <NavLink className={styles.navLink} onClick={handleOptionSelect} to="/home">
+                        <p>Directions</p>
+                    </NavLink>
 
-                    <BaseButton text={"Continue to Site"} onClick={handleOptionSelect}/>
+                    <BaseButton text={"CONTINUE TO SITE"} onClick={handleOptionSelect}/>
                 </div>
             </div>
         </div>

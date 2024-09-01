@@ -19,30 +19,35 @@
     backdrop-filter: blur(10px);
 
     opacity: 0; /* Start hidden */
-    animation: fadeIn 1s ease-in-out 2s forwards;
+    animation: fadeIn 0.75s ease-in-out 0.5s forwards;
 }
 
 .Logo {
     width: 80%;
     position: relative;
-    top: 30rem;
+    top: 22rem;
     left: 40%;
     transform: translate(-50%, -50%);
 
     opacity: 0;
 
-    animation: fadeIn 2s ease-in 1.5s forwards, moveUp 1.5s ease-in-out 4s forwards;
+    animation: fadeIn 0.75s ease-in 0.5s forwards, moveUp 1s ease-in-out 1.5s forwards;
 }
 
 .optionsContainer {
     position: relative;
-    font-weight: 600;
-    color: white;
-    font-size: 2.5rem;
     top: 2rem;
 
     opacity: 0;
-    animation: fadeIn 0.5s ease-in 5s forwards;
+    animation: fadeIn 0.5s ease-in 1.80s forwards;
+}
+
+.navLink {
+    font-weight: 600;
+    color: #9DBFC1;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    text-decoration: none;
+    font-size: 2.5rem;
 }
 
 @keyframes fadeIn {
@@ -57,7 +62,7 @@
 
 @keyframes moveUp {
     from {
-        top: 30rem;
+        top: 22rem;
     }
 
     to {
