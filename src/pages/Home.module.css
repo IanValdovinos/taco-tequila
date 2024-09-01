@@ -87,7 +87,9 @@
 
 /* --- Media Queries --- */
 @media screen and (max-width: 70rem) {
-    
+    .lowerBanner {
+        background-attachment: scroll;
+    }
 }
 
 @media screen and (max-width: 50rem) {
@@ -234,7 +236,7 @@
     top: 37rem;
     left: 1rem;
     transform: rotate(25deg);
-    animation: spinTwo 80s linear infinite;
+    animation: spinTwo 70s linear infinite;
 }
 
 @keyframes spinOne {
@@ -251,7 +253,7 @@
         transform: rotate(25deg);
     }
     100% {
-        transform: rotate(-385deg);
+        transform: rotate(-335deg);
     }
 }
 
@@ -264,24 +266,24 @@
 
     .learnMorePictureOne {
         grid-column: 1 / 2;
-        border-radius: 50% 0 0 50%;
+        border-radius: 25% 0 0 0;
     }
     
     .learnMorePictureTwo {
         grid-column: 2 / 3;
-        border-radius: 0 50% 0 0;
+        border-radius: 0 25% 0 0;
     }
     
     .learnMorePictureThree {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
-        border-radius: 0 0 0 50%;
+        border-radius: 0 0 0 25%;
     }
     
     .learnMorePictureFour {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
-        border-radius: 0 50% 50% 0;
+        border-radius: 0 0% 25% 0;
     }
 
     .spinningPlateOne {
