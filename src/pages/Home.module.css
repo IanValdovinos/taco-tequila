@@ -60,7 +60,6 @@
     background-position: 50%;
     width: 100%;
     height: 65rem;
-
     position: relative;
 }
 
@@ -187,8 +186,6 @@
     background-color: #A56F80;
     padding: 3rem 0;
     position: relative;
-
-    /* display: none; */
 }
 
 .learnMorePicturesContainer {
@@ -313,7 +310,7 @@
     text-align: center;
     padding: 2rem 0;
     background-color: #9DBFC1;
-    /* color: white; */
+    position: relative;
 }
 
 .deliveryAvailableContainer {
@@ -331,6 +328,14 @@
 
 .deliveryAvailableSectionUE {
     width: 65%;
+}
+
+.stickerOne {
+    position: absolute;
+    width: 10%;
+    top: 2rem;
+    left: -1rem;
+
 }
 
 @media screen and (max-width: 65rem) {
@@ -353,7 +358,6 @@
         width: 90%;
         margin: auto;
     }
-    
 }
 
 /* ############################################## */

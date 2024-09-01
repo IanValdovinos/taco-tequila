@@ -11,6 +11,10 @@ import Footer from '../components/Footer';
 // Import media
 import ContactUsImage from '../assets/test_phone_call.jpeg';
 
+import StickerOne from '../assets/stickers/margarita.png';
+import StickerTwo from '../assets/stickers/corn.png';
+
+
 function Contact() {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -124,8 +128,11 @@ function Contact() {
                         </div>
                     </div>
                 </div> 
+
+                {/* Stickers */}
+                <img className={styles.stickerOne} src={StickerOne} alt='Decorative sticker'/>
+                <img className={styles.stickerTwo} src={StickerTwo} alt='Decorative sticker'/>
             </div>
-            
 
             {/* ########## FOOTER ########## */}
             <Footer></Footer>

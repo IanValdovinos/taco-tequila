@@ -1,6 +1,8 @@
 .learnMorePicture {
-    width: 25rem;
+    width: 100%;
+    max-width: 25rem;
     height: 25rem;
+    
     background-size: cover;
     margin: 1rem;
 

@@ -11,6 +11,7 @@
     padding-top: 8rem;
     background-color: #A56F80;
     height: fit-content;
+    position: relative;
 }
 
 .contactUsPageContentContainer {
@@ -132,6 +133,22 @@
     color: white;
 }
 
+/* Stickers */
+.stickerOne {
+    width: 15%;
+    position: absolute;
+    top: 13rem;
+    right: 0;
+}
+
+/* Stickers */
+.stickerTwo {
+    width: 18%;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
 /* --- Media Queries --- */
 @media screen and (max-width: 70rem) {
     .contactUsPageContentContainer {
@@ -148,6 +165,14 @@
 
     .fullSizeInput {
         width: 90%;
+    }
+
+    .stickerOne {
+        display: none;
+    }
+
+    .stickerTwo {
+        display: none;
     }
 }
 

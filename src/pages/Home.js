@@ -44,6 +44,10 @@ import DoorDashLogo from '../assets/icons/door_dash_logo.png';
 import UberEatsLogo from '../assets/icons/uber_eats_logo.png';
 import GrubhubLogo from '../assets/icons/grub_hub_logo.png';
 
+// Import stickers
+// import StickerOne from '../assets/stickers/shrimp.png';
+// import StickerTwo from '../assets/stickers/bowl.png';
+
 
 function Home() {
     // Use states for the navigation bar background color
@@ -154,6 +158,8 @@ function Home() {
                     <a href='https://www.ubereats.com' target='blank'><img className={styles.deliveryAvailableSectionUE} src={UberEatsLogo} alt='Uber Eats Logo'/></a>
                     <a href='https://www.grubhub.com' target='blank'><img className={styles.deliveryAvailableSectionDD} src={GrubhubLogo} alt='Grubhub Logo'/></a>
                 </div>
+
+                {/* <img className={styles.stickerOne} src={StickerOne} alt='Decorative sticker'/> */}
             </div>
 
 
