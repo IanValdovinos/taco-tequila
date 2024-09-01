@@ -27,7 +27,7 @@ function WelcomeScreenMobile({additionalClassnames}) {
                 <img className={styles.Logo} src={TransparentLogo} alt='Log'/>
 
                 <div className={styles.optionsContainer}>
-                    <p>Order Onlnie</p>
+                    <p>Order Online</p>
 
                     <NavLink className='navbarLink' onClick={handleOptionSelect} to="/menu">
                         <p>View Menu</p>
