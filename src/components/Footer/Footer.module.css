@@ -3,16 +3,59 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem;
-    
+    justify-items: center;
+}
+
+.footerContainer {
+    width: 100%;
 }
 
 .footerMap {
-    border: 0;
+    width: 90%;
+    height: 90%;
+}
 
-    width: 30em;
-    height: 30em;
+.whaleMediaMobile {
+    display: none;
 }
 
 .companyNameLink {
     color: black;
+}
+
+/* --- Media Queries --- */
+@media screen and (max-width: 70rem) {
+    
+}
+
+@media screen and (max-width: 50rem) {
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .contactInfoContainer {
+        grid-row: 1 / 2;
+    }
+
+    .hoursContainer {
+        grid-row: 2 / 3;
+    }
+
+    .footerMap {
+        height: 20rem;
+        grid-row: 3 / 4;
+    }
+
+    .footerMap {
+        width: 100%;
+    }
+
+    .whaleMediaDesktop {
+        display: none;
+    }
+
+    .whaleMediaMobile {
+        display: block;
+    }
 }

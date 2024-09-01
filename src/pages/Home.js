@@ -207,7 +207,7 @@ function Home() {
             </div>
 
             {/* ########## FOOTER ########## */}
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
 
         </div>
      );

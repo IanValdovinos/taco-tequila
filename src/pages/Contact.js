@@ -128,7 +128,7 @@ function Contact() {
             
 
             {/* ########## FOOTER ########## */}
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
         </div>
      );
 }

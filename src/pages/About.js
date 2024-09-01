@@ -48,7 +48,7 @@ function About() {
             </div>
 
             {/* ########## ABOUT US CONTENT ########## */}
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
         </div>
      );
 }
