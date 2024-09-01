@@ -95,7 +95,7 @@ function Home() {
                 <img className={styles.bannerLogo} src={LogoTransparentBackground} alt='Banner logo'></img>
             </div>
 
-            <div className={styles.navBar}><Navbar background={getNavBarBackgroundColor}/></div>
+            <div className={styles.navBar}><Navbar background={getNavBarBackgroundColor} page={'home'}/></div>
 
             <div className={styles.lowerBanner}>
                 <div className={styles.custom_shape_divider_bottom_1722811643}>

@@ -58,7 +58,7 @@ function Contact() {
     return ( 
         <div className={styles.contactUsPage}>
             {/* ########## NAVIGATION BAR ########## */}
-            <Navbar additionalClassNames={styles.navBar}></Navbar>
+            <Navbar additionalClassNames={styles.navBar} page={'contact'}></Navbar>
 
             {/* ########## PAGE CONTENT ########## */}
             <div className={styles.contactUsPageContent}>

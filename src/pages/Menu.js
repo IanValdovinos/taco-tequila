@@ -16,7 +16,7 @@ function Menu() {
     return ( 
         <div className={styles.menuPage}>
             {/* ########## NAVIGATION BAR ########## */}
-            <Navbar additionalClassNames={styles.navBar} background={'transparent'}></Navbar>
+            <Navbar additionalClassNames={styles.navBar} background={'transparent'} page={'menu'}></Navbar>
 
             {/* Ghost space */}
             <div className={styles.ghostSpace}></div>

@@ -6,13 +6,13 @@ import styles from './Navbar.module.css';
 import NavBarDesktop from './NavBarDesktop';
 import NavBarMobile from './NavBarMobile';
 
-function Navbar({additionalClassNames, background, position}) {
+function Navbar({additionalClassNames, background, position, page}) {
     
 
     return ( 
         <div>
             {/* DESKTOP NAVIGATION BAR */}
-            <NavBarDesktop additionalClassNames={`${additionalClassNames} ${styles.navBarDesktop}`} background={background} position={position}/>
+            <NavBarDesktop additionalClassNames={`${additionalClassNames} ${styles.navBarDesktop}`} background={background} position={position} page={page}/>
 
             {/* MOBILE NAVIGATION BAR */}
             <NavBarMobile additionalClassNames={`${additionalClassNames} ${styles.navBarMobile}`} background={background} position={position}/>

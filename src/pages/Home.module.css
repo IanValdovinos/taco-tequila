@@ -56,11 +56,11 @@
     content: '';
     background-image: url('../assets/two_tequila_bottles.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-    background-position: 50%;
+    background-position: center;
     width: 100%;
     height: 65rem;
-    position: relative;
 }
 
 .custom_shape_divider_bottom_1722811643 {

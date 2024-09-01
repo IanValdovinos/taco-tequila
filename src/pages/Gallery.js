@@ -26,7 +26,7 @@ function Gallery() {
         <div>
             {/* ########## NAVIGATION BAR ########## */}
             <div className={styles.navBarContainer}>
-                <Navbar additionalClassNames={styles.navBar} background={'transparent'}></Navbar>
+                <Navbar additionalClassNames={styles.navBar} background={'transparent'} page={'gallery'}></Navbar>
             </div>
 
             {/* ########## GALLERY CONTENT ########## */}

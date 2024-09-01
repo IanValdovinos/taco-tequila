@@ -18,7 +18,7 @@ function About() {
     return ( 
         <div>
             {/* ########## NAVIGATION BAR ########## */}
-            <Navbar additionalClassNames={styles.navBar} background={'transparent'}></Navbar>
+            <Navbar additionalClassNames={styles.navBar} background={'transparent'} page={'about'}></Navbar>
             
 
             {/* ########## BANNER ########## */}
