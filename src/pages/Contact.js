@@ -107,7 +107,7 @@ function Contact() {
                             {/* Phone */}
                             <div className={styles.inputSection}>
                                 <label htmlFor="phone">Phone</label>
-                                <input className={styles.fullSizeInput} type="tel" name="phone" id="phone" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12"  title="Ten digits code" onChange={handlePhoneNumberChange} value={phoneNumber}></input>
+                                <input className={styles.fullSizeInput} type="tel" name="phone" id="phone" maxlength="12"  title="Ten digits code" onChange={handlePhoneNumberChange} value={phoneNumber}></input>
                             </div>
 
                             {/* How did you hear about us? */}
@@ -123,7 +123,7 @@ function Contact() {
                             {/* Message area */}
                             <div className={styles.inputSection}>
                                 <label for="message">Message</label>
-                                <textarea className={styles.messageTextArea} id="message" name="message" rows="4" cols="50"></textarea>
+                                <textarea className={styles.messageTextArea} id="message" name="message" rows="4" cols="50" onChange={handleMessageChange} value={message}></textarea>
                             </div>
                         </div>
                     </div>

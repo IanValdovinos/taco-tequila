@@ -89,10 +89,10 @@ function Home() {
                         <source src={UpperBannerVideo} type="video/webm" />
                         Your browser is not supported!
                     </video>
-                </div> 
 
-                {/* Logo in upper banner */}
+                    {/* Logo in upper banner */}
                 <img className={styles.bannerLogo} src={LogoTransparentBackground} alt='Banner logo'></img>
+                </div> 
             </div>
 
             <div className={styles.navBar}><Navbar background={getNavBarBackgroundColor} page={'home'}/></div>
