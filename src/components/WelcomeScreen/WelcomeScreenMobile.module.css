@@ -1,0 +1,72 @@
+.welcomeScreenMobile {
+    width: 100vw;
+    height: 100vh;
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-image: url('../../assets/welcome_screen_background.png');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+  
+.blurredScreen {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1s ease-in-out 2s forwards;
+}
+
+.Logo {
+    width: 80%;
+    position: relative;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+
+    animation: fadeIn 2s ease-in 1.5s forwards, moveUp 1.5s ease-in-out 3.5s forwards;
+}
+
+.optionsContainer {
+    position: relative;
+    font-weight: 600;
+    color: white;
+    font-size: 2.5rem;
+    top: 10%;
+
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes moveUp {
+    from {
+        top: 50%;
+    }
+
+    to {
+        top: 20%;
+    }
+}
+
+@media screen and (min-width: 50rem) {
+    .welcomeScreenMobile {
+        display: none;
+    }
+}

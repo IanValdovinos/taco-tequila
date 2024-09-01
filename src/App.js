@@ -20,6 +20,7 @@ import Contact from './pages/Contact';
 import NoPage from './pages/NoPage';
 
 // Import components
+import WelcomeScreen from './components/WelcomeScreen';
 
 function App() {
 
@@ -73,6 +74,9 @@ function App() {
               </NavLink>
           </div>
         </div>
+
+        {/* ########## WELCOME SCREEN ########## */}
+        <WelcomeScreen/>
 
         {/* ########## PAGE CONTENT ########## */}
         <Routes>
