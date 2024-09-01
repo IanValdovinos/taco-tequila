@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     position: fixed; /* Stay in place */
-    z-index: 100000; /* Sit on top */
+    z-index: 30; /* Sit on top */
     left: 0;
     top: 0;
     background-image: url('../../assets/welcome_screen_background.png');

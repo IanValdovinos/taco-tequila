@@ -55,6 +55,13 @@ To learn how to add curved edges to a div, check out this [video](https://www.yo
 
 The mobile navigation bar is one of the most complex elements in the page. The implementation was based on [this article](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp). There are two components to the mobile navigation bar: The mobile navigation bar itself and the the overlaying screen that contains the available options. The mobile navigation bar is a subcomponent living in the Navbar component. The overlying screen is a fixed div living in the App.js file. 
 
+## Z-Indeces
+Navbar (Desktop) - 10
+
+Navbar Overlay (Mobile) - 20
+
+Welcome Screen - 30
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

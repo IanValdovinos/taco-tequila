@@ -37,6 +37,10 @@ import ReviewerOnePotrait from '../assets/test_reviewer_one.jpg';
 import ReviewerTwoPotrait from '../assets/test_reviewer_two.jpg';
 import ReviewerThreePotrait from '../assets/test_reviewer_three.jpg';
 
+import DoorDashLogo from '../assets/icons/door_dash_logo.png';
+import UberEatsLogo from '../assets/icons/uber_eats_logo.png';
+import GrubhubLogo from '../assets/icons/grub_hub_logo.png';
+
 
 function Home() {
     // Use states for the navigation bar background color
@@ -135,6 +139,17 @@ function Home() {
 
             {/* ########## SLIDESHOW ########## */}
             <SlideShowOne />
+
+            {/* ########## THIRD PARTY APPS ########## */}
+            <div className={styles.deliveryAvailableSection}>
+                <HeadingOne>Delivery Available</HeadingOne>
+                <div className={styles.deliveryAvailableContainer}>
+                    <a href='https://www.doordash.com' target='blank'><img className={styles.deliveryAvailableSectionDD} src={DoorDashLogo} alt='Door Dash Logo'/></a>
+                    <a href='https://www.ubereats.com' target='blank'><img className={styles.deliveryAvailableSectionUE} src={UberEatsLogo} alt='Uber Eats Logo'/></a>
+                    <a href='https://www.grubhub.com' target='blank'><img className={styles.deliveryAvailableSectionDD} src={GrubhubLogo} alt='Grubhub Logo'/></a>
+                </div>
+            </div>
+
 
             {/* ########## CUSTOMER REVIEWS ########## */}
             <div className={styles.customerReviewsSection}>

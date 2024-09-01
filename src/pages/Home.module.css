@@ -46,7 +46,7 @@
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 10;
 }
 
 .lowerBanner {
@@ -258,6 +258,56 @@
 /* ######################################## */
 /* ########## SECOND CTA SECTION ########## */
 /* ######################################## */
+
+/* ###################################### */
+/* ########## THIRD PARTY APPS ########## */
+/* ###################################### */
+.deliveryAvailableSection {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #9DBFC1;
+    /* color: white; */
+}
+
+.deliveryAvailableContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.deliveryAvailableSectionDD {
+    width: 100%;
+}
+
+.deliveryAvailableSectionUE {
+    width: 65%;
+}
+
+@media screen and (max-width: 65rem) {
+    .deliveryAvailableContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+    }   
+}
+
+@media screen and (max-width: 45rem) {
+    .deliveryAvailableContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+    }
+    
+}
 
 /* ############################################## */
 /* ########## CUSTOMER REVIEWS SECTION ########## */
