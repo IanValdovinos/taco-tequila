@@ -19,7 +19,7 @@ import BaseButton from '../BaseButton';
 function SlideShowOne() {
     return ( 
         <div className={styles.slideShow}>
-            <Carousel showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} className={styles.slideShow}>
+            <Carousel showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} className={styles.slideShow} preventMovementUntilSwipeScrollTolerance='true' swipeScrollTolerance='50'>
                 <div className={`${styles.slide} ${styles.slideOne}`}>
                     <div className={styles.slideContent}>
                         <HeadingOne additionalClassNames={styles.slideTitle}>BEST TACOS IN TOWN</HeadingOne>

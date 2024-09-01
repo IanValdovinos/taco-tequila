@@ -184,7 +184,7 @@ function Home() {
 
                 {/* MOBILE VIEW */}
                 <div className={styles.customerReviewsContainerCarousel}>
-                    <Carousel infiniteLoop={true} showIndicators={false}>
+                    <Carousel infiniteLoop={true} showIndicators={false} preventMovementUntilSwipeScrollTolerance='true' swipeScrollTolerance='50'>
                         <CustomerReview src={ReviewerOnePotrait} name={'Alex'}>
                             The street tacos here are the best outside of Detroit.
                             Services is quick and easy, menu as easy to navigate.

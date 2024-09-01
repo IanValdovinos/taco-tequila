@@ -4,6 +4,7 @@
 
 .slide {
     background-size: cover;
+    background-position: center;
     height: 50rem;
     position: relative;
 }
