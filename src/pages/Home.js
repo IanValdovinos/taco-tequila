@@ -33,6 +33,9 @@ import LearnMorePictureTwo from '../assets/tequila_shot.jpg';
 import LearnMorePictureThree from '../assets/test_panda_restaurant.jpg';
 import LearnMorePictureFour from '../assets/fajitas_pose.jpg';
 
+import SpinningPlateOne from '../assets/test_top_down_tacos.webp';
+import SpinningPlateTwo from '../assets/test_top_down_tacos_4.webp';
+
 import ReviewerOnePotrait from '../assets/test_reviewer_one.jpg';
 import ReviewerTwoPotrait from '../assets/test_reviewer_two.jpg';
 import ReviewerThreePotrait from '../assets/test_reviewer_three.jpg';
@@ -135,6 +138,9 @@ function Home() {
                     <LearnMorePicture additionalClassNames={styles.learnMorePictureThree} title={'First time'} src={LearnMorePictureThree}>GREAT TIME</LearnMorePicture>
                     <LearnMorePicture additionalClassNames={styles.learnMorePictureFour} title={'First time'} src={LearnMorePictureFour}>AND MORE</LearnMorePicture>
                 </div>
+
+                <img className={styles.spinningPlateOne} src={SpinningPlateOne} alt='Spinning plate one'/>
+                <img className={styles.spinningPlateTwo} src={SpinningPlateTwo} alt='Spinning plate two'/>
             </div>
 
             {/* ########## SLIDESHOW ########## */}

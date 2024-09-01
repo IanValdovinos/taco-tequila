@@ -3,7 +3,6 @@
 /* ############################ */
 .upperBanner {
     width: 100vw;
-    /* height: 41rem; */
     height: 100vh;
     position: relative;
     /* background-image: url('../assets/test_tacos.jpg');
@@ -50,13 +49,14 @@
 }
 
 .lowerBanner {
+    content: '';
     background-image: url('../assets/two_tequila_bottles.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: 50%;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 65rem;
 
     position: relative;
 }
@@ -183,6 +183,7 @@
 .learnMorePicturesSection {
     background-color: #A56F80;
     padding: 3rem 0;
+    position: relative;
 
     /* display: none; */
 }
@@ -218,6 +219,41 @@
     border-radius: 0 50% 50% 0;
 }
 
+.spinningPlateOne {
+    width: 33%;
+    position: absolute;
+    top: 8rem;
+    right: 1rem;
+    animation: spinOne 80s linear infinite;
+}
+
+.spinningPlateTwo {
+    width: 33%;
+    position: absolute;
+    top: 37rem;
+    left: 1rem;
+    transform: rotate(25deg);
+    animation: spinTwo 80s linear infinite;
+}
+
+@keyframes spinOne {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+@keyframes spinTwo {
+    0% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform: rotate(-385deg);
+    }
+}
+
 
 /* --- Media Queries --- */
 @media screen and (max-width: 70rem) {
@@ -245,6 +281,14 @@
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         border-radius: 0 50% 50% 0;
+    }
+
+    .spinningPlateOne {
+        display: none;
+    }
+    
+    .spinningPlateTwo {
+        display: none;
     }
 }
 
