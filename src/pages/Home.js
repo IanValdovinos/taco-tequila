@@ -76,7 +76,7 @@ function Home() {
     }, []);
 
     return ( 
-        <div>
+        <div className={styles.homePage}>
             {/* ########## BANNER ########## */}
             <div className={styles.upperBanner}>
                 {/* Background video */}

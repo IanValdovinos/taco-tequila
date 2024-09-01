@@ -1,3 +1,7 @@
+.homePage {
+    overscroll-behavior: none;
+}
+
 /* ############################ */
 /* ########## BANNER ########## */
 /* ############################ */
@@ -52,7 +56,6 @@
     content: '';
     background-image: url('../assets/two_tequila_bottles.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
     background-position: 50%;
     width: 100%;

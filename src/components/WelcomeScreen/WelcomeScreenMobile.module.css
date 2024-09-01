@@ -39,7 +39,7 @@
     font-weight: 600;
     color: white;
     font-size: 2.5rem;
-    top: 8rem;
+    top: 2rem;
 
     opacity: 0;
     animation: fadeIn 0.5s ease-in 5s forwards;
@@ -61,7 +61,7 @@
     }
 
     to {
-        top: 15rem;
+        top: 9rem;
     }
 }
 
