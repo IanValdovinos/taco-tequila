@@ -91,7 +91,7 @@ function Home() {
                     </video>
 
                     {/* Logo in upper banner */}
-                <img className={styles.bannerLogo} src={LogoTransparentBackground} alt='Banner logo'></img>
+                    <img className={styles.bannerLogo} src={LogoTransparentBackground} alt='Banner logo'></img>
                 </div> 
             </div>
 
@@ -105,94 +105,71 @@ function Home() {
                 </div>
             </div>
 
-            {/* ########## FIRST CTA SECTION ########## */}
-            <div className={styles.firstCTA}>
-                {/* Logo */}
-                <div className={styles.firstCTALogoContainer}>
-                    <img src={LogoBlueBackground} alt='Taco Tequila Y Mas Logo'></img>
+            <div className={styles.homePageContent}>
+                {/* ########## FIRST CTA SECTION ########## */}
+                <div className={styles.firstCTA}>
+                    {/* Logo */}
+                    <div className={styles.firstCTALogoContainer}>
+                        <img src={LogoBlueBackground} alt='Taco Tequila Y Mas Logo'></img>
+                    </div>
+
+                    {/* Heading */}
+                    <HeadingOne additionalClassNames={styles.firstCTAHeading}>JOIN US TODAY FOR AN UNFORGETABLE TIME</HeadingOne>
+
+                    {/* Window pictures */}
+                    <div className={styles.windowPictureContainer}>
+                        <WindowPicture src={WindowOne}/>
+                        <WindowPicture src={WindowTwo}/>
+                        <WindowPicture src={WindowThree}/>
+                        <WindowPicture src={WindowFour}/>
+                    </div>
+
+                    {/* Order Now Button */}
+                    <BaseButton additionalClassNames={styles.firstCTAButton} text={'ORDER NOW'} color={'black'}/>
+
+                    {/* Bottom curved divider */}
+                    <div className={styles.custom_shape_divider_bottom_1722894654}>
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className={styles.shape_fill}></path>
+                        </svg>
+                    </div>
                 </div>
 
-                {/* Heading */}
-                <HeadingOne additionalClassNames={styles.firstCTAHeading}>JOIN US TODAY FOR AN UNFORGETABLE TIME</HeadingOne>
+                {/* ########## LEARN MORE PICTURES ########## */}
+                <div className={styles.learnMorePicturesSection}>
+                    <div className={styles.learnMorePicturesContainer}>
+                        <LearnMorePicture additionalClassNames={styles.learnMorePictureOne} title={'First time'} src={LearnMorePictureOne}>TACOS</LearnMorePicture>
+                        <LearnMorePicture additionalClassNames={styles.learnMorePictureTwo} title={'First time'} src={LearnMorePictureTwo}>TEQUILA</LearnMorePicture>
+                        <LearnMorePicture additionalClassNames={styles.learnMorePictureThree} title={'First time'} src={LearnMorePictureThree}>GREAT TIME</LearnMorePicture>
+                        <LearnMorePicture additionalClassNames={styles.learnMorePictureFour} title={'First time'} src={LearnMorePictureFour}>AND MORE</LearnMorePicture>
+                    </div>
 
-                {/* Window pictures */}
-                <div className={styles.windowPictureContainer}>
-                    <WindowPicture src={WindowOne}/>
-                    <WindowPicture src={WindowTwo}/>
-                    <WindowPicture src={WindowThree}/>
-                    <WindowPicture src={WindowFour}/>
+                    <img className={styles.spinningPlateOne} src={SpinningPlateOne} alt='Spinning plate one'/>
+                    <img className={styles.spinningPlateTwo} src={SpinningPlateTwo} alt='Spinning plate two'/>
                 </div>
 
-                {/* Order Now Button */}
-                <BaseButton additionalClassNames={styles.firstCTAButton} text={'ORDER NOW'} color={'black'}/>
+                {/* ########## SLIDESHOW ########## */}
+                <SlideShowOne />
 
-                {/* Bottom curved divider */}
-                <div className={styles.custom_shape_divider_bottom_1722894654}>
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className={styles.shape_fill}></path>
-                    </svg>
-                </div>
-            </div>
+                {/* ########## THIRD PARTY APPS ########## */}
+                <div className={styles.deliveryAvailableSection}>
+                    <HeadingOne>Delivery Available</HeadingOne>
+                    <div className={styles.deliveryAvailableContainer}>
+                        <a href='https://www.doordash.com' target='blank'><img className={styles.deliveryAvailableSectionDD} src={DoorDashLogo} alt='Door Dash Logo'/></a>
+                        <a href='https://www.ubereats.com' target='blank'><img className={styles.deliveryAvailableSectionUE} src={UberEatsLogo} alt='Uber Eats Logo'/></a>
+                        <a href='https://www.grubhub.com' target='blank'><img className={styles.deliveryAvailableSectionDD} src={GrubhubLogo} alt='Grubhub Logo'/></a>
+                    </div>
 
-            {/* ########## LEARN MORE PICTURES ########## */}
-            <div className={styles.learnMorePicturesSection}>
-                <div className={styles.learnMorePicturesContainer}>
-                    <LearnMorePicture additionalClassNames={styles.learnMorePictureOne} title={'First time'} src={LearnMorePictureOne}>TACOS</LearnMorePicture>
-                    <LearnMorePicture additionalClassNames={styles.learnMorePictureTwo} title={'First time'} src={LearnMorePictureTwo}>TEQUILA</LearnMorePicture>
-                    <LearnMorePicture additionalClassNames={styles.learnMorePictureThree} title={'First time'} src={LearnMorePictureThree}>GREAT TIME</LearnMorePicture>
-                    <LearnMorePicture additionalClassNames={styles.learnMorePictureFour} title={'First time'} src={LearnMorePictureFour}>AND MORE</LearnMorePicture>
+                    {/* <img className={styles.stickerOne} src={StickerOne} alt='Decorative sticker'/> */}
                 </div>
 
-                <img className={styles.spinningPlateOne} src={SpinningPlateOne} alt='Spinning plate one'/>
-                <img className={styles.spinningPlateTwo} src={SpinningPlateTwo} alt='Spinning plate two'/>
-            </div>
 
-            {/* ########## SLIDESHOW ########## */}
-            <SlideShowOne />
+                {/* ########## CUSTOMER REVIEWS ########## */}
+                <div className={styles.customerReviewsSection}>
+                    <HeadingOne additionalClassNames={styles.reviewsTitle}>CUSTOMER REVIEWS</HeadingOne>
 
-            {/* ########## THIRD PARTY APPS ########## */}
-            <div className={styles.deliveryAvailableSection}>
-                <HeadingOne>Delivery Available</HeadingOne>
-                <div className={styles.deliveryAvailableContainer}>
-                    <a href='https://www.doordash.com' target='blank'><img className={styles.deliveryAvailableSectionDD} src={DoorDashLogo} alt='Door Dash Logo'/></a>
-                    <a href='https://www.ubereats.com' target='blank'><img className={styles.deliveryAvailableSectionUE} src={UberEatsLogo} alt='Uber Eats Logo'/></a>
-                    <a href='https://www.grubhub.com' target='blank'><img className={styles.deliveryAvailableSectionDD} src={GrubhubLogo} alt='Grubhub Logo'/></a>
-                </div>
-
-                {/* <img className={styles.stickerOne} src={StickerOne} alt='Decorative sticker'/> */}
-            </div>
-
-
-            {/* ########## CUSTOMER REVIEWS ########## */}
-            <div className={styles.customerReviewsSection}>
-                <HeadingOne additionalClassNames={styles.reviewsTitle}>CUSTOMER REVIEWS</HeadingOne>
-
-                {/* DESKTOP VIEW */}
-                <div className={styles.customerReviewsContainer}>
-                    <CustomerReview src={ReviewerOnePotrait} name={'Alex'}>
-                        The street tacos here are the best outside of Detroit.
-                        Services is quick and easy, menu as easy to navigate.
-                    </CustomerReview>
-
-                    <CustomerReview src={ReviewerTwoPotrait} name={'Alex'}>
-                        The street tacos here are the best outside of Detroit.
-                        Services is quick and easy, menu as easy to navigate.
-                    </CustomerReview>
-
-                    <CustomerReview src={ReviewerThreePotrait} name={'Alex'}>
-                        The street tacos here are the best outside of Detroit.
-                        Services is quick and easy, menu as easy to navigate.
-                    </CustomerReview>
-
-                    <CustomerReview src={ReviewerThreePotrait} name={'Alex'}>
-                        The street tacos here are the best outside of Detroit.
-                        Services is quick and easy, menu as easy to navigate.
-                    </CustomerReview>
-                </div>
-
-                {/* MOBILE VIEW */}
-                <div className={styles.customerReviewsContainerCarousel}>
-                    <Carousel infiniteLoop={true} showIndicators={false} preventMovementUntilSwipeScrollTolerance='true' swipeScrollTolerance='50'>
+                    {/* DESKTOP VIEW */}
+                    <div className={styles.customerReviewsContainer}>
                         <CustomerReview src={ReviewerOnePotrait} name={'Alex'}>
                             The street tacos here are the best outside of Detroit.
                             Services is quick and easy, menu as easy to navigate.
@@ -211,23 +188,48 @@ function Home() {
                         <CustomerReview src={ReviewerThreePotrait} name={'Alex'}>
                             The street tacos here are the best outside of Detroit.
                             Services is quick and easy, menu as easy to navigate.
-                        </CustomerReview>       
-                    </Carousel>
+                        </CustomerReview>
+                    </div>
+
+                    {/* MOBILE VIEW */}
+                    <div className={styles.customerReviewsContainerCarousel}>
+                        <Carousel infiniteLoop={true} showIndicators={false} preventMovementUntilSwipeScrollTolerance='true' swipeScrollTolerance='50'>
+                            <CustomerReview src={ReviewerOnePotrait} name={'Alex'}>
+                                The street tacos here are the best outside of Detroit.
+                                Services is quick and easy, menu as easy to navigate.
+                            </CustomerReview>
+
+                            <CustomerReview src={ReviewerTwoPotrait} name={'Alex'}>
+                                The street tacos here are the best outside of Detroit.
+                                Services is quick and easy, menu as easy to navigate.
+                            </CustomerReview>
+
+                            <CustomerReview src={ReviewerThreePotrait} name={'Alex'}>
+                                The street tacos here are the best outside of Detroit.
+                                Services is quick and easy, menu as easy to navigate.
+                            </CustomerReview>
+
+                            <CustomerReview src={ReviewerThreePotrait} name={'Alex'}>
+                                The street tacos here are the best outside of Detroit.
+                                Services is quick and easy, menu as easy to navigate.
+                            </CustomerReview>       
+                        </Carousel>
+                    </div>
+
+                    {/* Curved divider */}
+                    <div className={styles.custom_shape_divider_bottom_1723407545}>
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" className={styles.shape_fill}></path>
+                            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" className={styles.shape_fill}></path>
+                            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" className={styles.shape_fill}></path>
+                        </svg>
+                    </div>
                 </div>
 
-                {/* Curved divider */}
-                <div className={styles.custom_shape_divider_bottom_1723407545}>
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" className={styles.shape_fill}></path>
-                        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" className={styles.shape_fill}></path>
-                        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" className={styles.shape_fill}></path>
-                    </svg>
-                </div>
+                {/* ########## FOOTER ########## */}
+                <Footer></Footer>
+
             </div>
-
-            {/* ########## FOOTER ########## */}
-            <Footer></Footer>
-
         </div>
      );
 }

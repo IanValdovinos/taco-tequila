@@ -8,6 +8,7 @@ body {
 
   /* Turns off overscroll behavior */
   overscroll-behavior: none;
+  overflow-x: hidden;
 }
 
 code {
