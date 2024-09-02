@@ -94,7 +94,7 @@
 }
 
 .formContainer {
-    /* border: 2px solid green; */
+    width: 100%;
     text-align: left;
     color: white;
     font-size: 1.5rem;
@@ -123,7 +123,7 @@
 }
 
 .messageTextArea {
-    font-size: 1.5rem;
+    font-size: 1rem;
     width: 95%;
     height: 7rem;
 
@@ -131,13 +131,32 @@
     border: 1px solid white;
     border-radius: 5px;
     color: white;
+    resize: none;
+}
+
+.sendButton {
+    color: white;
+    font-size: 1rem;
+    width: fit-content;
+    padding: 15px 40px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 2px solid white;
+    background-color: transparent;
+    margin: 1rem auto;
+    transition: 0.5s all;
+}
+
+.sendButton:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 /* Stickers */
 .stickerOne {
     width: 15%;
     position: absolute;
-    top: 13rem;
+    top: 10rem;
     right: 0;
 }
 

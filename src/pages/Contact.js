@@ -55,6 +55,20 @@ function Contact() {
         setMessage(message);
     }
 
+    function sendEmail(e) {
+        e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
+
+        alert("Feature under construction!")
+        // emailjs.sendForm('service_k7ap29p', 'template_f8q96vq', e.target, 'HGDHEeKc6gMkVm2SJ')
+        //     .then((result) => {
+        //         alert('Application sent successfully!');
+        //         window.location.reload()
+        //     }, (error) => {
+        //         alert('There has been an error while sending the application. Try again.');
+        //         console.log(error.text);
+        //     });
+    }
+
     return ( 
         <div className={styles.contactUsPage}>
             {/* ########## NAVIGATION BAR ########## */}
@@ -82,9 +96,8 @@ function Contact() {
                         
 
                         {/* Form */}
-                        <div className={styles.formContainer}>
+                        <form className={styles.formContainer} onSubmit={sendEmail}>
                             {/* Full name section */}
-                            <p>Name</p>
                             <div className={styles.nameContainer}>
                                 <div className={styles.nameContainerHalf}>
                                     {/* First Name  */}
@@ -114,9 +127,11 @@ function Contact() {
                             <p>How did you hear about us?</p>
                             <div className={styles.inputSection}>
                                 <select className={styles.fullSizeInput} name="poc" id="poc" onChange={handlePocChange} value={poc}>
-                                    <option value="volvo">Option 1</option>
-                                    <option value="saab">Option 2</option>
-                                    <option value="mercedes">Option 3</option>
+                                    <option value="Internet Search/Google">Internet Search/Google</option>
+                                    <option value="Social Media (Facebook, Instagram, Twitter, etc.)">Social Media (Facebook, Instagram, Twitter, etc.)</option>
+                                    <option value="Friend or Family Referral">Friend or Family Referral</option>
+                                    <option value="Online Advertisement">Online Advertisement</option>
+                                    <option value="Flyer or Brochure">Flyer or Brochure</option>
                                 </select>
                             </div>
 
@@ -125,7 +140,10 @@ function Contact() {
                                 <label for="message">Message</label>
                                 <textarea className={styles.messageTextArea} id="message" name="message" rows="4" cols="50" onChange={handleMessageChange} value={message}></textarea>
                             </div>
-                        </div>
+
+                            {/* Submit button */}
+                            <input className={styles.sendButton} type='submit' value="SEND"/>
+                        </form>
                     </div>
                 </div> 
 
