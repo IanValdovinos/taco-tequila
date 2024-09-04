@@ -11,8 +11,9 @@ import ParagraphOne from '../ParagraphOne';
 // Import media
 import TransparentLogo from '../../assets/transparent_logo.png';
 
-import InstagramLogo from '../../assets/icons/facebook_white.webp';
-import FacebookLogo from '../../assets/icons/instagram_white.webp';
+import FacebookLogo from '../../assets/icons/facebook_white.webp';
+import InstagramLogo from '../../assets/icons/instagram_white.webp';
+import ReservationIcon from '../../assets/icons/white_calendar_icon_two.jpg';
 
 function NavBarDesktop({additionalClassNames, background, position, page}) {
 
@@ -69,9 +70,11 @@ function NavBarDesktop({additionalClassNames, background, position, page}) {
 
                 { contactLink }
 
-                <img className={styles.socialMediaIcon} src={InstagramLogo} alt='Instagram logo'/>
+                <a className={styles.socialMediaLink} href='https://www.facebook.com/profile.php?id=100092913590205' target='blank'><img className={styles.socialMediaIcon} src={FacebookLogo} alt='Facebook logo'/></a>
 
-                <img className={styles.socialMediaIcon} src={FacebookLogo} alt='Facebook logo'/>
+                <a className={styles.socialMediaLink} href='https://www.instagram.com/tacotequilaymas/' target='blank'><img className={styles.socialMediaIcon} src={InstagramLogo} alt='Instagram logo'/></a>
+
+                <a className={styles.socialMediaLink} href='https://www.opentable.com/' target='blank'><img className={styles.socialMediaIconMedium} src={ReservationIcon} alt='Reservation icon'/></a>
 
                 <BaseButton additionalClassNames={styles.navBarButton} color={'black'} text={'Order Now'}></BaseButton>
             </div>

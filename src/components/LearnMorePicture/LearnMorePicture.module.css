@@ -44,5 +44,10 @@
 }
 
 @media screen and (max-width: 50rem) {
-  
+    .learnMorePicture{
+        /* Shadow effect */
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
 }

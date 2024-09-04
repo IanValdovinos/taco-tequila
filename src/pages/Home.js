@@ -33,6 +33,8 @@ import LearnMorePictureTwo from '../assets/tequila_shot.jpg';
 import LearnMorePictureThree from '../assets/test_panda_restaurant.jpg';
 import LearnMorePictureFour from '../assets/fajitas_pose.jpg';
 
+import SpinningPlateLearnMoreSection from '../assets/test_two_taco.webp';
+
 import SpinningPlateOne from '../assets/test_top_down_tacos.webp';
 import SpinningPlateTwo from '../assets/test_top_down_tacos_4.webp';
 
@@ -125,7 +127,10 @@ function Home() {
                     </div>
 
                     {/* Order Now Button */}
-                    <BaseButton additionalClassNames={styles.firstCTAButton} text={'ORDER NOW'} color={'black'}/>
+                    <div className={styles.firstCTAButtonContainer}>
+                        <BaseButton additionalClassNames={styles.firstCTAButton} text={'ORDER NOW'} color={'black'}/>
+                        <BaseButton additionalClassNames={styles.firstCTAButton} text={'RESERVE NOW'} color={'black'}/>
+                    </div>
 
                     {/* Bottom curved divider */}
                     <div className={styles.custom_shape_divider_bottom_1722894654}>
@@ -142,6 +147,8 @@ function Home() {
                         <LearnMorePicture additionalClassNames={styles.learnMorePictureTwo} title={'First time'} src={LearnMorePictureTwo}>TEQUILA</LearnMorePicture>
                         <LearnMorePicture additionalClassNames={styles.learnMorePictureThree} title={'First time'} src={LearnMorePictureThree}>GREAT TIME</LearnMorePicture>
                         <LearnMorePicture additionalClassNames={styles.learnMorePictureFour} title={'First time'} src={LearnMorePictureFour}>AND MORE</LearnMorePicture>
+
+                        <img className={styles.learnMoreSpinningPlate} src={SpinningPlateLearnMoreSection} alt='Spinning taco decorative image'/>
                     </div>
 
                     <img className={styles.spinningPlateOne} src={SpinningPlateOne} alt='Spinning plate one'/>

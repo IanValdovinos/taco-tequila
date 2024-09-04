@@ -39,6 +39,13 @@
 
 .socialMediaIcon {
     width: 2rem;
+}
+
+.socialMediaIconMedium {
+    width: 2.5rem;
+}
+
+.socialMediaLink {
     margin: 0 1rem;
 }
 

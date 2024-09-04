@@ -7,10 +7,8 @@ import HeadingOne from '../components/HeadingOne';
 import Footer from '../components/Footer';
 
 // Import media 
-import PageOne from '../assets/menu_pages/page_one.jpg';
-import PageTwo from '../assets/menu_pages/page_two.jpg';
-import PageThree from '../assets/menu_pages/page_three.jpg';
-import PageFour from '../assets/menu_pages/page_four.jpg';
+import PageOne from '../assets/menu_pages/menu_one.JPG';
+import PageTwo from '../assets/menu_pages/menu_two.JPG';
 
 function Menu() {
     return ( 
@@ -26,8 +24,6 @@ function Menu() {
             <div className={styles.menuPageContainer}>
                 <img className={styles.singleMenuPage} src={PageOne} alt='Menu page one'/>
                 <img className={styles.singleMenuPage} src={PageTwo} alt='Menu page two'/>
-                <img className={styles.singleMenuPage} src={PageThree} alt='Menu page three'/>
-                <img className={styles.singleMenuPage} src={PageFour} alt='Menu page four'/>
             </div>
 
             {/* ########## MENU PAGES ########## */}

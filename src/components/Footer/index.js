@@ -22,7 +22,6 @@ function Footer() {
                 <HeadingTwo>TACO TEQUILA Y MAS</HeadingTwo>
                 <HeadingThree>CONTACT</HeadingThree>
                 <ParagraphOne>31660 John R Rd, Madison Heights, MI 48071</ParagraphOne>
-                <ParagraphOne>tacotequila@gmail.com</ParagraphOne>
                 <ParagraphOne>(248) 333-3333</ParagraphOne>
                 <ParagraphOne additionalClassNames={styles.whaleMediaDesktop}>Made by <a className={styles.companyNameLink} href='https://www.instagram.com/whale_media_agency/' target='blank'>Whale Media</a> 🐋</ParagraphOne>
             </div>
@@ -30,13 +29,9 @@ function Footer() {
             {/* Hours */}
             <div className={styles.hoursContainer}>
                 <HeadingThree>HOURS</HeadingThree>
-                <ParagraphOne>Mon–Wed 6–11</ParagraphOne>
-                <ParagraphOne>Mon–Wed 6–11</ParagraphOne>
-                <ParagraphOne>Mon–Wed 6–11</ParagraphOne>
-                <ParagraphOne>Mon–Wed 6–11</ParagraphOne>
-                <ParagraphOne>Mon–Wed 6–11</ParagraphOne>
-                <ParagraphOne>Mon–Wed 6–11</ParagraphOne>
-                <ParagraphOne>Mon–Wed 6–11</ParagraphOne>
+                <HeadingThree>Mon–Thur 11am–10pm</HeadingThree>
+                <HeadingThree>Fri–Sat 11am–11pm</HeadingThree>
+                <HeadingThree>Sun 11am–10pm</HeadingThree>
                 <a href='https://www.opentable.com/'>Make a reservation</a>
             </div>
         </div>

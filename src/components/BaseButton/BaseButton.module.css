@@ -1,6 +1,6 @@
 .baseButton {
     color: white;
-    width: fit-content;
+    min-width: fit-content;
     padding: 15px 40px;
     border-radius: 10px;
     display: inline-block;
