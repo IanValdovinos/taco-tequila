@@ -10,10 +10,15 @@ import MapsLogo from '../../assets/icons/maps_logo.png';
 import CalendarIcon from '../../assets/icons/white_calendar_icon_two.jpg';
 
 function QuickAccessBar({opacity = '1'}) {
-    console.log(opacity);
+    var rightPosition;
+    if (opacity === '1') {
+        rightPosition = '-1.5rem';
+    } else {
+        rightPosition = '-7rem';
+    }
 
     return ( 
-        <div className={styles.quickAccessBar} style={{opacity: opacity}}>
+        <div className={styles.quickAccessBar} style={{right: rightPosition}}>
             <img className={styles.bottleImage} src={Bottle} alt={'Quick access bar'}/>
 
             <a href='https://www.yelp.com/' target='blank'><img className={styles.yelpLogo} src={YelpLogo} alt={'Yelp logo'}/></a>
