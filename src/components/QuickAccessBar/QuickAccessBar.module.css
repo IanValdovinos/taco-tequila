@@ -9,6 +9,8 @@
     top: 50%;
     right: -1.5rem;
     transform: translate(-50%, -50%);
+
+    transition: opacity 0.2s ease-out;
 }
 
 .bottleImage {
@@ -42,6 +44,6 @@
 
 @media screen and (max-width: 50rem) {
     .quickAccessBar {
-        display: none;
+        /* display: none; */
     }
 }

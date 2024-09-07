@@ -21,7 +21,12 @@ import NoPage from './pages/NoPage';
 
 // Import components
 import WelcomeScreen from './components/WelcomeScreen';
-import QuickAccessBar from './components/QuickAccessBar';
+import BaseButton from './components/BaseButton';
+
+// Import media
+import FacebookLogo from './assets/icons/facebook_white.webp';
+import InstagramLogo from './assets/icons/instagram_white.webp';
+
 
 function App() {
 
@@ -73,14 +78,20 @@ function App() {
               <NavLink className='navbarLink' onClick={handleOptionSelect} to="/contact">
                   <p className='overlayOption'>Contact Us</p>
               </NavLink>
+
+              <BaseButton text={'ORDER NOW'}/>
+
+              <div className="overlayIconContainer">
+                <a className='overlayIconLink' href='https://www.facebook.com/profile.php?id=100092913590205' target='blank'><img className="overlayIcon" src={FacebookLogo} alt='Facebook logo'/></a>
+
+                <a className='overlayIconLink' href='https://www.instagram.com/tacotequilaymas/' target='blank'><img className="overlayIcon" src={InstagramLogo} alt='Instagram logo'/></a>
+                
+              </div>
           </div>
         </div>
 
         {/* ########## WELCOME SCREEN ########## */}
         <WelcomeScreen/>
-
-        {/* ########## QUICK ACCESS BAR ########## */}
-        <QuickAccessBar />
 
         {/* ########## PAGE CONTENT ########## */}
         <Routes>

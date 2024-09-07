@@ -5,6 +5,7 @@ import styles from './Menu.module.css'
 import Navbar from '../components/Navbar';
 import HeadingOne from '../components/HeadingOne';
 import Footer from '../components/Footer';
+import QuickAccessBar from '../components/QuickAccessBar';
 
 // Import media 
 import PageOne from '../assets/menu_pages/menu_one.JPG';
@@ -15,6 +16,9 @@ function Menu() {
         <div className={styles.menuPage}>
             {/* ########## NAVIGATION BAR ########## */}
             <Navbar additionalClassNames={styles.navBar} background={'transparent'} page={'menu'}></Navbar>
+
+            {/* ########## QUICK ACCESS BAR ########## */}
+            <QuickAccessBar/>
 
             {/* Ghost space */}
             <div className={styles.ghostSpace}></div>

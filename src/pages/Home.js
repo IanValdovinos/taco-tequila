@@ -15,6 +15,7 @@ import LearnMorePicture from '../components/LearnMorePicture';
 import CustomerReview from '../components/CustomerReview';
 import SlideShowOne from '../components/SlideShowOne';
 import Footer from '../components/Footer';
+import QuickAccessBar from '../components/QuickAccessBar';
 
 // Import media
 import LogoBlueBackground from '../assets/logo_blue_background.png';
@@ -46,14 +47,13 @@ import DoorDashLogo from '../assets/icons/door_dash_logo.png';
 import UberEatsLogo from '../assets/icons/uber_eats_logo.png';
 import GrubhubLogo from '../assets/icons/grub_hub_logo.png';
 
-// Import stickers
-// import StickerOne from '../assets/stickers/shrimp.png';
-// import StickerTwo from '../assets/stickers/bowl.png';
-
 
 function Home() {
     // Use states for the navigation bar background color
     const [getNavBarBackgroundColor, setNavBarBackgroundColor] = useState('#9DBFC1');
+
+    // Use state for the visibility of the easy access bar
+    const [getEasyAccessBarOpacity, setEasyAccessBarOpacity] = useState('0');
 
     // Use effect to update the navigation bar background color
     useEffect(() => {
@@ -81,6 +81,33 @@ function Home() {
         };
     }, []);
 
+
+    useEffect(() => {
+        const handleScroll = () => {
+            // Get the current scroll position
+            const scrollPosition = window.scrollY;
+  
+            // Set the scroll threshold (change this value to the point you want the quick access bar to appear)
+            const changeColorPoint = 900;
+  
+            // Update the quick access bar displayability based on scroll position
+            if (scrollPosition > changeColorPoint) {
+              setEasyAccessBarOpacity('1');
+            } else {
+              setEasyAccessBarOpacity('0'); 
+            }
+        };
+  
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+  
+        // Clean up event listener on component unmount
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+  
+    }, []);
+
     return ( 
         <div className={styles.homePage}>
             {/* ########## BANNER ########## */}
@@ -106,6 +133,9 @@ function Home() {
                     </svg>
                 </div>
             </div>
+
+            {/* ########## QUICK ACCESS BAR ########## */}
+            <QuickAccessBar opacity={getEasyAccessBarOpacity}/>
 
             <div className={styles.homePageContent}>
                 {/* ########## FIRST CTA SECTION ########## */}
@@ -148,7 +178,7 @@ function Home() {
                         <LearnMorePicture additionalClassNames={styles.learnMorePictureThree} title={'First time'} src={LearnMorePictureThree}>GREAT TIME</LearnMorePicture>
                         <LearnMorePicture additionalClassNames={styles.learnMorePictureFour} title={'First time'} src={LearnMorePictureFour}>AND MORE</LearnMorePicture>
 
-                        <img className={styles.learnMoreSpinningPlate} src={SpinningPlateLearnMoreSection} alt='Spinning taco decorative image'/>
+                        <img className={styles.learnMoreSpinningPlate} src={SpinningPlateLearnMoreSection} alt='Spinning taco decorative item'/>
                     </div>
 
                     <img className={styles.spinningPlateOne} src={SpinningPlateOne} alt='Spinning plate one'/>

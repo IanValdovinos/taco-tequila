@@ -5,7 +5,7 @@ import styles from './NavBarMobile.module.css';
 
 // Import Media
 import TransparentLogo from '../../assets/transparent_logo.png';
-import HamburgerIcon from '../../assets/icons/white_hamburger_icon.png';
+import HamburgerIcon from '../../assets/icons/white_hamburger_icon_with_border.png';
 
 function NavBarMobile({additionalClassNames, background, position}) {
     /* Open when someone clicks on the span element */

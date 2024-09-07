@@ -5,30 +5,31 @@
     border-radius: 10px;
     display: inline-block;
     border: 2px solid white;
-
-    background-image: url('../../assets/water.png');
-    background-size: 400px 200px;
-    background-repeat: repeat-x;
-    animation: flow 3s linear infinite;
-    background-position-y: 55px;
-    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease-out;
 }
 
-@keyframes flow {
-    0% {
-        background-position-x: -1200px;
-    }
-
-    100% {
-        background-position-x: -0px;
-    }
+.baseButton::before {
+    content: "";
+    position: absolute;
+    background: #A56F80;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: all 0.2s ease-out;
 }
 
 .baseButton:hover {
     cursor: pointer;
-    scale: 1.05;
-    /* background-position-y: 5px; */
-    /* border: 5px solid white; */
+    transform: translateY(-0.25rem);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.baseButton:hover::before {
+    top: 0;
 }
 
 .baseButton p {

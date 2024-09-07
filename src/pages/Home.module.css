@@ -89,6 +89,10 @@
 
 /* --- Media Queries --- */
 @media screen and (max-width: 70rem) {
+    .upperBanner {
+        height: 58rem;
+    }
+
     .lowerBanner {
         background-attachment: scroll;
     }

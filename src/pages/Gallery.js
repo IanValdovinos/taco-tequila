@@ -6,6 +6,7 @@ import styles from './Gallery.module.css';
 // Import components
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import QuickAccessBar from '../components/QuickAccessBar';
 
 // Import media
 import PhotoOne from '../assets/gallery/test_birria.jpeg';
@@ -28,6 +29,9 @@ function Gallery() {
             <div className={styles.navBarContainer}>
                 <Navbar additionalClassNames={styles.navBar} background={'transparent'} page={'gallery'}></Navbar>
             </div>
+
+            {/* ########## QUICK ACCESS BAR ########## */}
+            <QuickAccessBar/>
 
             {/* ########## GALLERY CONTENT ########## */}
             <div className={styles.mediaContent}>

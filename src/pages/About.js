@@ -13,12 +13,16 @@ import HeadingTwo from '../components/HeadingTwo';
 import ParagraphOne from '../components/ParagraphOne';
 import BaseButton from '../components/BaseButton';
 import Footer from '../components/Footer';
+import QuickAccessBar from '../components/QuickAccessBar';
 
 function About() {
     return ( 
         <div>
             {/* ########## NAVIGATION BAR ########## */}
             <Navbar additionalClassNames={styles.navBar} background={'transparent'} page={'about'}></Navbar>
+
+            {/* ########## QUICK ACCESS BAR ########## */}
+            <QuickAccessBar/>
             
 
             {/* ########## BANNER ########## */}

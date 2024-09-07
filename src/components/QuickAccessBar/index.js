@@ -9,9 +9,11 @@ import YelpLogo from '../../assets/icons/yelp_logo.png';
 import MapsLogo from '../../assets/icons/maps_logo.png';
 import CalendarIcon from '../../assets/icons/white_calendar_icon_two.jpg';
 
-function QuickAccessBar() {
+function QuickAccessBar({opacity = '1'}) {
+    console.log(opacity);
+
     return ( 
-        <div className={styles.quickAccessBar}>
+        <div className={styles.quickAccessBar} style={{opacity: opacity}}>
             <img className={styles.bottleImage} src={Bottle} alt={'Quick access bar'}/>
 
             <a href='https://www.yelp.com/' target='blank'><img className={styles.yelpLogo} src={YelpLogo} alt={'Yelp logo'}/></a>

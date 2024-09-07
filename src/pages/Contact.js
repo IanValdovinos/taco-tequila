@@ -7,6 +7,7 @@ import styles from './Contact.module.css';
 import Navbar from '../components/Navbar';
 import HeadingOne from '../components/HeadingOne';
 import Footer from '../components/Footer';
+import QuickAccessBar from '../components/QuickAccessBar';
 
 // Import media
 import ContactUsImage from '../assets/test_phone_call.jpeg';
@@ -73,6 +74,9 @@ function Contact() {
         <div className={styles.contactUsPage}>
             {/* ########## NAVIGATION BAR ########## */}
             <Navbar additionalClassNames={styles.navBar} page={'contact'}></Navbar>
+
+            {/* ########## QUICK ACCESS BAR ########## */}
+            <QuickAccessBar/>
 
             {/* ########## PAGE CONTENT ########## */}
             <div className={styles.contactUsPageContent}>
