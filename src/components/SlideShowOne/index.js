@@ -17,9 +17,34 @@ import BaseButton from '../BaseButton';
 // import CarouselPictureFour from '../../assets/test_carousel_three.jpg';
 
 function SlideShowOne() {
+
+    // Custom Previous Arrow Component
+    const customPrevArrow = (onClickHandler, hasPrev, label) => (
+        <button
+        type="button"
+        onClick={onClickHandler}
+        disabled={!hasPrev}
+        aria-label={label}
+        className={`${styles.customArrow} ${styles.customPrevArrow}`}>
+            <span className={styles.customArrowIcon}>&lsaquo;</span>
+        </button>
+    );
+
+    // Custom Previous Arrow Component
+    const customNextArrow = (onClickHandler, hasPrev, label) => (
+        <button
+        type="button"
+        onClick={onClickHandler}
+        disabled={!hasPrev}
+        aria-label={label}
+        className={`${styles.customArrow} ${styles.customNextArrow}`}>
+            <span className={styles.customArrowIcon}>&rsaquo;</span>
+        </button>
+    );
+
     return ( 
         <div className={styles.slideShow}>
-            <Carousel showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} className={styles.slideShow} preventMovementUntilSwipeScrollTolerance='true' swipeScrollTolerance='50'>
+            <Carousel showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} className={styles.slideShow} preventMovementUntilSwipeScrollTolerance='true' swipeScrollTolerance='50' renderArrowPrev={customPrevArrow} renderArrowNext={customNextArrow}>
                 <div className={`${styles.slide} ${styles.slideOne}`}>
                     <div className={styles.slideContent}>
                         <HeadingOne additionalClassNames={styles.slideTitle}>BEST TACOS IN TOWN</HeadingOne>

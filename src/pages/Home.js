@@ -58,17 +58,21 @@ function Home() {
     // Use effect to update the navigation bar background color
     useEffect(() => {
         const handleScroll = () => {
-            // Get the current scroll position
-            const scrollPosition = window.scrollY;
+            // Get the specific element
+            const targetElement = document.getElementById('homePageNavBar');
 
-            // Set the scroll threshold (change this value to the point you want the color to change)
-            const changeColorPoint = 650;
-
-            // Update the background color based on scroll position
-            if (scrollPosition > changeColorPoint) {
-                setNavBarBackgroundColor('transparent'); // New background color after scroll point
-            } else {
-                setNavBarBackgroundColor('#9DBFC1'); // Original background color
+            if (targetElement) {
+                // Get the element's position relative to the viewport
+                const rect = targetElement.getBoundingClientRect();
+                
+                // Check if the element is at the top of the viewport
+                if (rect.top <= 0) {
+                    setNavBarBackgroundColor('transparent'); // New background color when element reaches the top
+                    setEasyAccessBarOpacity('1'); // Display quick access bar
+                } else {
+                    setNavBarBackgroundColor('#9DBFC1'); // Original background color
+                    setEasyAccessBarOpacity('0'); // Hide quick access bar
+                }
             }
         };
     
@@ -79,33 +83,6 @@ function Home() {
         return () => {
           window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
-
-
-    useEffect(() => {
-        const handleScroll = () => {
-            // Get the current scroll position
-            const scrollPosition = window.scrollY;
-  
-            // Set the scroll threshold (change this value to the point you want the quick access bar to appear)
-            const changeColorPoint = 900;
-  
-            // Update the quick access bar displayability based on scroll position
-            if (scrollPosition > changeColorPoint) {
-              setEasyAccessBarOpacity('1');
-            } else {
-              setEasyAccessBarOpacity('0'); 
-            }
-        };
-  
-        // Add scroll event listener
-        window.addEventListener('scroll', handleScroll);
-  
-        // Clean up event listener on component unmount
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-  
     }, []);
 
     return ( 
@@ -124,7 +101,7 @@ function Home() {
                 </div> 
             </div>
 
-            <div className={styles.navBar}><Navbar background={getNavBarBackgroundColor} page={'home'}/></div>
+            <div id='homePageNavBar' className={styles.navBar}><Navbar background={getNavBarBackgroundColor} page={'home'}/></div>
 
             <div className={styles.lowerBanner}>
                 <div className={styles.custom_shape_divider_bottom_1722811643}>

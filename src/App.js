@@ -79,7 +79,7 @@ function App() {
                   <p className='overlayOption'>Contact Us</p>
               </NavLink>
 
-              <BaseButton text={'ORDER NOW'}/>
+              <BaseButton additionalClassNames={'overlayButton'} text={'ORDER NOW'}/>
 
               <div className="overlayIconContainer">
                 <a className='overlayIconLink' href='https://www.facebook.com/profile.php?id=100092913590205' target='blank'><img className="overlayIcon" src={FacebookLogo} alt='Facebook logo'/></a>

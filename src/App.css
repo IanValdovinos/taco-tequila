@@ -80,6 +80,16 @@
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
   direction: rtl; /* Set the text direction to right-to-left */
   white-space: nowrap; /* Prevent line breaks */
+
+  text-shadow: 
+        -2.7px -2.7px 0 #000, 
+        2.7px -2.7px 0 #000, 
+        -2.7px 2.7px 0 #000, 
+        2.7px 2.7px 0 #000,
+        0px 3.5px 0 #000,
+        0px -3.5px 0 #000,
+        3.5px 0px 0 #000,
+        -3.5px 0px 0 #000;
 }
 
 /* The navigation links inside the overlay */
@@ -87,6 +97,10 @@
   color: white;
   font-size: 2.5rem;
   text-decoration: none;
+}
+
+.overlayButton {
+  text-shadow: none;
 }
 
 .overlayIconContainer {

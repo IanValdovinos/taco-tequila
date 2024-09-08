@@ -9,6 +9,55 @@
     position: relative;
 }
 
+.customArrow {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50% 50% 50% 50%;
+    background: rgba(157, 191, 193, 0.7);
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-out;
+
+    -webkit-tap-highlight-color: transparent; /* Removes blue highligh background when tapping (mobile) on the custom arrow */
+}
+
+.customArrow:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    background: rgba(157, 191, 193, 1);
+}
+
+.customArrow:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.customPrevArrow {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.customNextArrow {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.customArrowIcon {
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    top: -10px;
+}
+
 .slideContent {
     position: absolute;
     top: 50%;
@@ -32,4 +81,30 @@
 
 .slideFour {
     background-image: url('../../assets/test_carousel_three.jpg');
+}
+
+/* --- Media Queries --- */
+@media screen and (max-width: 70rem) {
+
+}
+
+@media screen and (max-width: 50rem) {
+    .customArrow {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .customArrowIcon {
+        font-size: 4rem;
+    }
+
+    .customPrevArrow {
+        top: 57%;
+        left: 38px;
+    }
+    
+    .customNextArrow {
+        top: 57%;
+        right: -25px;
+    }
 }
