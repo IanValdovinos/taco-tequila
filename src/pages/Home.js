@@ -68,7 +68,7 @@ function Home() {
                 const rect = targetElement.getBoundingClientRect();
                 
                 // Check if the element is at the top of the viewport
-                if (rect.top <= 10) {
+                if (rect.top <= 3) {
                     setNavBarBackgroundColor('transparent'); // New background color when element reaches the top
                     setEasyAccessBarOpacity('1'); // Display quick access bar
                 } else {
