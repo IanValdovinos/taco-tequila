@@ -24,6 +24,8 @@ import LogoTransparentBackground from '../assets/transparent_logo.png';
 import UpperBannerCover from '../assets/test_tacos.jpg';
 import UpperBannerVideo from '../assets/videos/test_cooking.mp4';
 
+import UpArrowHint from '../assets/icons/up_arrow_two.png';
+
 import WindowOne from '../assets/frida_1.jpeg';
 import WindowTwo from '../assets/chente.png';
 import WindowThree from '../assets/cantinflas.jpg';
@@ -98,6 +100,9 @@ function Home() {
 
                     {/* Logo in upper banner */}
                     <img className={styles.bannerLogo} src={LogoTransparentBackground} alt='Banner logo'></img>
+
+                    {/* Scroll up hint icon */}
+                    <img className={styles.upArrow} src={UpArrowHint} alt=''/>
                 </div> 
             </div>
 

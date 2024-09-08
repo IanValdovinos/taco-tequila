@@ -31,6 +31,7 @@
     width: 100%;
     object-fit: cover;
     object-position: 60%;
+    filter: blur(3px);
     -webkit-filter: blur(3px);
 }
 
@@ -41,6 +42,16 @@
     transform: translate(-50%, -50%);
     width: 90%;
     max-width: 40rem;
+}
+
+.upArrow {
+    width: 3rem;
+    position: absolute;
+    bottom: 7rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    animation: bounceUpDown 1.2s ease-out 0s infinite;
 }
 
 .navBar {
@@ -85,6 +96,20 @@
 .custom_shape_divider_bottom_1722811643 .shape_fill {
     fill: #9DBFC1;
     
+}
+
+@keyframes bounceUpDown {
+    0% {
+        bottom: 7rem;
+    }
+
+    50% {
+        bottom: 8rem;
+    }
+
+    100% {
+        bottom: 7rem;
+    }
 }
 
 /* --- Media Queries --- */
