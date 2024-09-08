@@ -157,14 +157,14 @@ function Home() {
                     <div className={styles.learnMorePicturesContainer}>
                         <LearnMorePicture additionalClassNames={styles.learnMorePictureOne} title={'First time'} src={LearnMorePictureOne}>TACOS</LearnMorePicture>
                         <LearnMorePicture additionalClassNames={styles.learnMorePictureTwo} title={'First time'} src={LearnMorePictureTwo}>TEQUILA</LearnMorePicture>
+                        <img className={styles.spinningPlateOne} src={SpinningPlateOne} alt='Spinning plate one'/>
+
+                        <img className={styles.spinningPlateTwo} src={SpinningPlateTwo} alt='Spinning plate two'/>
                         <LearnMorePicture additionalClassNames={styles.learnMorePictureThree} title={'First time'} src={LearnMorePictureThree}>GREAT TIME</LearnMorePicture>
                         <LearnMorePicture additionalClassNames={styles.learnMorePictureFour} title={'First time'} src={LearnMorePictureFour}>AND MORE</LearnMorePicture>
 
                         <img className={styles.learnMoreSpinningPlate} src={SpinningPlateLearnMoreSection} alt='Spinning taco decorative item'/>
                     </div>
-
-                    <img className={styles.spinningPlateOne} src={SpinningPlateOne} alt='Spinning plate one'/>
-                    <img className={styles.spinningPlateTwo} src={SpinningPlateTwo} alt='Spinning plate two'/>
                 </div>
 
                 {/* ########## SLIDESHOW ########## */}
