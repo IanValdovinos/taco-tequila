@@ -217,12 +217,16 @@
 }
 
 .learnMorePicturesContainer {
+    width: 100vw;
+    height: fit-content;
     margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
     justify-items: center;
-    width: fit-content;
-    gap: 2rem;
 }
 
 .learnMorePictureOne {
@@ -269,7 +273,7 @@
     width: 36%;
     position: absolute;
     top: 50%;
-    left: 50.5%;
+    left: 50%;
     transform: translate(-50%, -50%);
 
     animation: spinThree 40s linear infinite;
@@ -307,28 +311,33 @@
 @media screen and (max-width: 70rem) {
     .learnMorePicturesContainer {
         grid-template-columns: repeat(2, 1fr);
+        padding: 0;
     }
 
     .learnMorePictureOne {
         grid-column: 1 / 2;
         border-radius: 25% 0 0 0;
+        justify-self: right;
     }
     
     .learnMorePictureTwo {
         grid-column: 2 / 3;
         border-radius: 0 25% 0 0;
+        justify-self: left;
     }
     
     .learnMorePictureThree {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         border-radius: 0 0 0 25%;
+        justify-self: right;
     }
     
     .learnMorePictureFour {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         border-radius: 0 0% 25% 0;
+        justify-self: left;
     }
 
     .spinningPlateOne {
@@ -343,7 +352,7 @@
 @media screen and (max-width: 50rem) {
     .learnMorePicturesContainer {
         width: 100%;
-        gap: 0rem;
+        gap: 1.5rem;
     }
 
     .learnMorePictureOne::after {
@@ -351,8 +360,8 @@
         position: absolute;
         bottom: -1rem;
         right: -1rem;
-        height: 43%;
-        width: 43%;
+        height: 48%;
+        width: 48%;
         background: #A56F80;
         border-radius: 100% 0 0 0;
         user-select: none;
@@ -363,8 +372,8 @@
         position: absolute;
         bottom: -1rem;
         left: -1rem;
-        height: 43%;
-        width: 43%;
+        height: 48%;
+        width: 48%;
         background: #A56F80;
         border-radius: 0 100% 0 0;
         user-select: none;
@@ -375,8 +384,8 @@
         position: absolute;
         top: -1rem;
         right: -1rem;
-        height: 43%;
-        width: 43%;
+        height: 48%;
+        width: 48%;
         background: #A56F80;
         border-radius: 0 0 0 100%;
         user-select: none;
@@ -387,8 +396,8 @@
         position: absolute;
         top: -1rem;
         left: -1rem;
-        height: 43%;
-        width: 43%;
+        height: 48%;
+        width: 48%;
         background: #A56F80;
         border-radius: 0 0 100% 0;
         user-select: none;

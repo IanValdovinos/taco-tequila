@@ -34,7 +34,7 @@ import LearnMorePictureTwo from '../assets/tequila_shot.jpg';
 import LearnMorePictureThree from '../assets/test_panda_restaurant.jpg';
 import LearnMorePictureFour from '../assets/fajitas_pose.jpg';
 
-import SpinningPlateLearnMoreSection from '../assets/test_two_taco.webp';
+import SpinningPlateLearnMoreSection from '../assets/test_two_taco.png';
 
 import SpinningPlateOne from '../assets/test_top_down_tacos.webp';
 import SpinningPlateTwo from '../assets/test_top_down_tacos_4.webp';
