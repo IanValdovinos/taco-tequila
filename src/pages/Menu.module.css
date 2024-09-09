@@ -27,6 +27,8 @@
 
 .singleMenuPage {
     width: 100%;
+    max-width: 85rem;
+    margin: auto;
 }
 
 /* --- Media Queries --- */

@@ -17,7 +17,7 @@ import QuickAccessBar from '../components/QuickAccessBar';
 
 function About() {
     return ( 
-        <div>
+        <div className={styles.aboutUsPage}>
             {/* ########## NAVIGATION BAR ########## */}
             <Navbar additionalClassNames={styles.navBar} background={'transparent'} page={'about'}></Navbar>
 

@@ -21,7 +21,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: #9DBFC1;
-    padding: 2rem;
+    padding: 3rem;
+    border-bottom: 5px dotted white;
 }
 
 .famPhotoTitle {
