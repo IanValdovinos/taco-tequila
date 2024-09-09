@@ -21,7 +21,7 @@ import QuickAccessBar from '../components/QuickAccessBar';
 import LogoBlueBackground from '../assets/logo_blue_background.png';
 import LogoTransparentBackground from '../assets/transparent_logo.png';
 
-import UpperBannerCover from '../assets/test_tacos.jpg';
+import UpperBannerCover from '../assets/ddh_six_tacos_one_jarrito.jpg';
 import UpperBannerVideo from '../assets/videos/test_cooking.mp4';
 
 import UpArrowHint from '../assets/icons/up_arrow_two.png';
@@ -31,8 +31,8 @@ import WindowTwo from '../assets/chente.png';
 import WindowThree from '../assets/cantinflas.jpg';
 import WindowFour from '../assets/catrina_1.png';
 
-import LearnMorePictureOne from '../assets/test_tacos_2.jpg';
-import LearnMorePictureTwo from '../assets/tequila_shot.jpg';
+import LearnMorePictureOne from '../assets/ddh_three_birria_tacos.jpg';
+import LearnMorePictureTwo from '../assets/ddh_tequila_shot.jpg';
 import LearnMorePictureThree from '../assets/test_panda_restaurant.jpg';
 import LearnMorePictureFour from '../assets/fajitas_pose.jpg';
 

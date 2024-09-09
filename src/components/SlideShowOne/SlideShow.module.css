@@ -7,6 +7,16 @@
     background-position: center;
     height: 50rem;
     position: relative;
+
+    text-shadow: 
+        -2.7px -2.7px 0 #000, 
+        2.7px -2.7px 0 #000, 
+        -2.7px 2.7px 0 #000, 
+        2.7px 2.7px 0 #000,
+        0px 3.5px 0 #000,
+        0px -3.5px 0 #000,
+        3.5px 0px 0 #000,
+        -3.5px 0px 0 #000;
 }
 
 .customArrow {
@@ -67,20 +77,28 @@
     color: white;
 }
 
+/* Best tacos in town */
 .slideOne {
-    background-image: url('../../assets/test_tacos.jpg');
+    background-image: url('../../assets/ddh_three_tacos.jpg');
 }
 
+/* Great time with family and friends */
 .slideTwo {
-    background-image: url('../../assets/test_carousel_one.jpg');
+    background-image: url('../../assets/ddh_fajitas.jpg');
 }
 
+/* Authentic Mexican Food */
 .slideThree {
-    background-image: url('../../assets/test_carousel_two.jpg');
+    background-image: url('../../assets/ddh_burrito.jpg');
 }
 
+/* Refreshing drinks */
 .slideFour {
     background-image: url('../../assets/test_carousel_three.jpg');
+}
+
+.slideButton {
+    text-shadow: none;
 }
 
 /* --- Media Queries --- */
@@ -89,6 +107,16 @@
 }
 
 @media screen and (max-width: 50rem) {
+    /* Best tacos in town */
+    .slideOne {
+        background-image: url('../../assets/ddh_single_taco_two_jarritos.jpg');
+    }
+
+    /* Great time with family and friends */
+    .slideTwo {
+        background-image: url('../../assets/ddh_quesadilla_and_beer.jpg');
+    }
+
     .customArrow {
         width: 4rem;
         height: 4rem;

@@ -48,28 +48,28 @@ function SlideShowOne() {
                 <div className={`${styles.slide} ${styles.slideOne}`}>
                     <div className={styles.slideContent}>
                         <HeadingOne additionalClassNames={styles.slideTitle}>BEST TACOS IN TOWN</HeadingOne>
-                        <BaseButton color={'black'} text={'ORDER NOW'}></BaseButton>
+                        <BaseButton additionalClassNames={styles.slideButton} color={'black'} text={'ORDER NOW'}></BaseButton>
                     </div>
                 </div>
 
                 <div className={`${styles.slide} ${styles.slideTwo}`}>
                     <div className={styles.slideContent}>
                         <HeadingOne additionalClassNames={styles.slideTitle}>GREAT TIME WITH FAMILY AND FRIENDS</HeadingOne>
-                        <BaseButton color={'black'} text={'ORDER NOW'}></BaseButton>
+                        <BaseButton additionalClassNames={styles.slideButton} color={'black'} text={'ORDER NOW'}></BaseButton>
                     </div>
                 </div>
 
                 <div className={`${styles.slide} ${styles.slideThree}`}>
                     <div className={styles.slideContent}>
                         <HeadingOne additionalClassNames={styles.slideTitle}>AUTHENTIC MEXICAN FOOD</HeadingOne>
-                        <BaseButton color={'black'} text={'ORDER NOW'}></BaseButton>
+                        <BaseButton additionalClassNames={styles.slideButton} color={'black'} text={'ORDER NOW'}></BaseButton>
                     </div>
                 </div>
 
                 <div className={`${styles.slide} ${styles.slideFour}`}>
                     <div className={styles.slideContent}>
                         <HeadingOne additionalClassNames={styles.slideTitle}>REFRESHING DRINKS</HeadingOne>
-                        <BaseButton color={'black'} text={'ORDER NOW'}></BaseButton>
+                        <BaseButton additionalClassNames={styles.slideButton} color={'black'} text={'ORDER NOW'}></BaseButton>
                     </div>
                 </div>
             </Carousel>

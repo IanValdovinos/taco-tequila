@@ -9,18 +9,18 @@ import Footer from '../components/Footer';
 import QuickAccessBar from '../components/QuickAccessBar';
 
 // Import media
-import PhotoOne from '../assets/gallery/test_birria.jpeg';
-import PhotoTwo from '../assets/gallery/test_burrito.jpeg';
-import PhotoThree from '../assets/gallery/test_chile_relleno.jpeg';
-import PhotoFour from '../assets/gallery/test_ench.jpeg';
-import PhotoFive from '../assets/gallery/test_enfrijoladas.jpeg';
-import PhotoSix from '../assets/gallery/test_taco_combo.jpeg';
-import PhotoSeven from '../assets/gallery/test_tacos_dorados.jpeg';
-import PhotoEight from '../assets/gallery/test_tacos.jpeg';
-import PhotoNine from '../assets/gallery/test_tamal.jpeg';
-import PhotoTen from '../assets/gallery/test_birria.jpeg';
-import PhotoEleven from '../assets/gallery/test_burrito.jpeg';
-import PhotoTwelve from '../assets/gallery/test_chile_relleno.jpeg';
+import PhotoOne from '../assets/gallery/ddh_birria_burrito_upper_view.jpg';
+import PhotoTwo from '../assets/gallery/ddh_chip_salsa_guacamole.jpg';
+import PhotoThree from '../assets/gallery/ddh_modelo.jpg';
+import PhotoFour from '../assets/gallery/ddh_shrimps.jpg';
+import PhotoFive from '../assets/gallery/ddh_arroz_con_leche.jpg';
+import PhotoSix from '../assets/gallery/ddh_burrito_upper_view.jpg';
+import PhotoSeven from '../assets/gallery/ddh_three_tacos.jpg';
+import PhotoEight from '../assets/gallery/ddh_clay_pot_chips.jpg';
+import PhotoNine from '../assets/gallery/ddh_enchiladas_poblanas.jpg';
+import PhotoTen from '../assets/gallery/ddh_chocolate_cake.jpg';
+import PhotoEleven from '../assets/gallery/ddh_pozole.jpg';
+import PhotoTwelve from '../assets/gallery/ddh_fajitas_top_down.jpg';
 
 function Gallery() {
     return ( 
