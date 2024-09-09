@@ -38,8 +38,8 @@ import LearnMorePictureFour from '../assets/fajitas_pose.jpg';
 
 import SpinningPlateLearnMoreSection from '../assets/test_two_taco.png';
 
-import SpinningPlateOne from '../assets/test_top_down_tacos.webp';
-import SpinningPlateTwo from '../assets/test_top_down_tacos_4.webp';
+import SpinningPlateOne from '../assets/ddh_transparent_shrimps.png';
+import SpinningPlateTwo from '../assets/ddh_burrito_upper_view.png';
 
 import ReviewerOnePotrait from '../assets/test_reviewer_one.jpg';
 import ReviewerTwoPotrait from '../assets/test_reviewer_two.jpg';
@@ -94,7 +94,7 @@ function Home() {
                 {/* Background video */}
                 <div className={styles.bannerVideo}>
                     <video className={styles.bannerVideoContent} autoPlay muted loop poster={UpperBannerCover}>
-                        <source src={UpperBannerVideo} type="video/webm" />
+                        {/* <source src={UpperBannerVideo} type="video/webm" /> */}
                         Your browser is not supported!
                     </video>
 
