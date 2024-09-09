@@ -94,7 +94,7 @@ function Home() {
                 {/* Background video */}
                 <div className={styles.bannerVideo}>
                     <video className={styles.bannerVideoContent} autoPlay muted loop poster={UpperBannerCover}>
-                        {/* <source src={UpperBannerVideo} type="video/webm" /> */}
+                        <source src={UpperBannerVideo} type="video/webm" />
                         Your browser is not supported!
                     </video>
 
