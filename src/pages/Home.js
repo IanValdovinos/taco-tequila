@@ -21,7 +21,7 @@ import QuickAccessBar from '../components/QuickAccessBar';
 import LogoBlueBackground from '../assets/logo_blue_background.png';
 import LogoTransparentBackground from '../assets/transparent_logo.png';
 
-import UpperBannerCover from '../assets/ddh_six_tacos_one_jarrito.jpg';
+import UpperBannerCover from '../assets/ddh_chicken_taco_and_jarrito.jpg';
 import UpperBannerVideo from '../assets/videos/test_cooking.mp4';
 
 import UpArrowHint from '../assets/icons/up_arrow_two.png';

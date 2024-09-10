@@ -31,8 +31,8 @@
     width: 100%;
     object-fit: cover;
     object-position: 60%;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
 }
 
 .bannerLogo {
