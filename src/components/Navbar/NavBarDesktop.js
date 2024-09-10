@@ -15,41 +15,41 @@ import FacebookLogo from '../../assets/icons/facebook_white.webp';
 import InstagramLogo from '../../assets/icons/instagram_white.webp';
 import ReservationIcon from '../../assets/icons/white_calendar_icon_two.jpg';
 
-function NavBarDesktop({additionalClassNames, background, position, page}) {
+function NavBarDesktop({additionalClassNames, background, position, page, onOptionSelect}) {
 
     let homeLink;
     if (page === 'home') {
-        homeLink = <NavLink className={`${styles.navbarLink} ${styles.selectedNavbarLink}`} to="/"><ParagraphOne>Home</ParagraphOne></NavLink>
+        homeLink = <NavLink onClick={onOptionSelect} className={`${styles.navbarLink} ${styles.selectedNavbarLink}`} to="/"><ParagraphOne>Home</ParagraphOne></NavLink>
     } else {
-        homeLink = <NavLink className={styles.navbarLink} to="/"><ParagraphOne>Home</ParagraphOne></NavLink>
+        homeLink = <NavLink onClick={onOptionSelect} className={styles.navbarLink} to="/"><ParagraphOne>Home</ParagraphOne></NavLink>
     }
 
     let menuLink;
     if (page === 'menu') {
-        menuLink = <NavLink className={`${styles.navbarLink} ${styles.selectedNavbarLink}`} to="/menu"><ParagraphOne>Menu</ParagraphOne></NavLink>
+        menuLink = <NavLink onClick={onOptionSelect} className={`${styles.navbarLink} ${styles.selectedNavbarLink}`} to="/menu"><ParagraphOne>Menu</ParagraphOne></NavLink>
     } else {
-        menuLink = <NavLink className={styles.navbarLink} to="/menu"><ParagraphOne>Menu</ParagraphOne></NavLink>
+        menuLink = <NavLink onClick={onOptionSelect} className={styles.navbarLink} to="/menu"><ParagraphOne>Menu</ParagraphOne></NavLink>
     }
 
     let galleryLink;
     if (page === 'gallery') {
-        galleryLink = <NavLink className={`${styles.navbarLink} ${styles.selectedNavbarLink}`} to="/gallery"><ParagraphOne>Gallery</ParagraphOne></NavLink>
+        galleryLink = <NavLink onClick={onOptionSelect} className={`${styles.navbarLink} ${styles.selectedNavbarLink}`} to="/gallery"><ParagraphOne>Gallery</ParagraphOne></NavLink>
     } else {
-        galleryLink = <NavLink className={styles.navbarLink} to="/gallery"><ParagraphOne>Gallery</ParagraphOne></NavLink>
+        galleryLink = <NavLink onClick={onOptionSelect} className={styles.navbarLink} to="/gallery"><ParagraphOne>Gallery</ParagraphOne></NavLink>
     }
 
     let aboutLink;
     if (page === 'about') {
-        aboutLink = <NavLink className={`${styles.navbarLink} ${styles.selectedNavbarLink}`} to="/about"><ParagraphOne>About</ParagraphOne></NavLink>
+        aboutLink = <NavLink onClick={onOptionSelect} className={`${styles.navbarLink} ${styles.selectedNavbarLink}`} to="/about"><ParagraphOne>About</ParagraphOne></NavLink>
     } else {
-        aboutLink = <NavLink className={styles.navbarLink} to="/about"><ParagraphOne>About</ParagraphOne></NavLink>
+        aboutLink = <NavLink onClick={onOptionSelect} className={styles.navbarLink} to="/about"><ParagraphOne>About</ParagraphOne></NavLink>
     }
 
     let contactLink;
     if (page === 'contact') {
-        contactLink = <NavLink className={`${styles.navbarLink} ${styles.selectedNavbarLink}`} to="/contact"><ParagraphOne>Contact</ParagraphOne></NavLink>
+        contactLink = <NavLink onClick={onOptionSelect} className={`${styles.navbarLink} ${styles.selectedNavbarLink}`} to="/contact"><ParagraphOne>Contact</ParagraphOne></NavLink>
     } else {
-        contactLink = <NavLink className={styles.navbarLink} to="/contact"><ParagraphOne>Contact</ParagraphOne></NavLink>
+        contactLink = <NavLink onClick={onOptionSelect} className={styles.navbarLink} to="/contact"><ParagraphOne>Contact</ParagraphOne></NavLink>
     }
 
     return ( 
